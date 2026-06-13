@@ -1,12 +1,12 @@
 {
-  "name": "@ismarzdev/openflowkit-mcp",
+  "name": "@ismarzdev/aispaceflow-mcp",
   "version": "0.1.2",
-  "mcpName": "io.github.ISMARZDEV/openflowkit-mcp",
-  "description": "Local-first Model Context Protocol server for OpenFlowKit — deterministic diagramming tools (validate DSL, templates, icons, viewer links) for Claude Desktop, Cursor, Windsurf, and other MCP clients. No API key, no cloud round-trip.",
+  "mcpName": "io.github.ISMARZDEV/aispaceflow-mcp",
+  "description": "Local-first Model Context Protocol server for AISpaceFlow — deterministic diagramming tools (validate DSL, templates, icons, viewer links) for Claude Desktop, Cursor, Windsurf, and other MCP clients. No API key, no cloud round-trip.",
   "keywords": [
     "mcp",
     "model-context-protocol",
-    "openflowkit",
+    "aispaceflow",
     "diagram",
     "flowchart",
     "mermaid",
@@ -19,13 +19,13 @@
   "bugs": "https://github.com/ISMARZDEV/flow-desing/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ISMARZDEV/flow-desing.git",
+    "url": "git+https://github.com/ISMARZDEV/flow-desing.git",
     "directory": "mcp-server"
   },
   "license": "MIT",
   "type": "module",
   "bin": {
-    "openflowkit-mcp": "./dist/index.js"
+    "aispaceflow-mcp": "dist/index.js"
   },
   "files": [
     "dist",

@@ -4,7 +4,7 @@ title: Templates & Asset Libraries
 description: Start diagrams faster with developer-oriented templates, asset libraries, and reusable starter packs.
 ---
 
-Templates and assets help you skip the empty-canvas problem. In OpenFlowKit the starter library is tuned for developer and platform workflows first: incident response, release flow, architecture communication, cloud systems, backend handoffs, and technical planning.
+Templates and assets help you skip the empty-canvas problem. In AISpaceFlow the starter library is tuned for developer and platform workflows first: incident response, release flow, architecture communication, cloud systems, backend handoffs, and technical planning.
 
 ## Template starter paths
 

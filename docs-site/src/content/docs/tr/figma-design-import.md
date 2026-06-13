@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Figma Design Import
-description: Figma’dan renk ve metin stillerini alıp bir OpenFlowKit tasarım sistemine uygulayın.
+description: Figma’dan renk ve metin stillerini alıp bir AISpaceFlow tasarım sistemine uygulayın.
 ---
 
 Figma import akışı, tema token’larını elle yeniden kurmak yerine mevcut bir Figma dosyasından stil çekmenizi sağlar.

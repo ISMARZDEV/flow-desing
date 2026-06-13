@@ -29,7 +29,7 @@ export function UseCases(): React.ReactElement {
                         <span className="font-serif italic font-normal text-white/50">Three native workflows.</span>
                     </h2>
                     <p className="text-xl text-white/50 max-w-2xl leading-relaxed text-balance font-medium">
-                        OpenFlowKit adapts to the tool you are already using. No new tabs to open. No context switching.
+                        AISpaceFlow adapts to the tool you are already using. No new tabs to open. No context switching.
                     </p>
                 </div>
 

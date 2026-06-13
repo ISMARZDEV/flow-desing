@@ -1,34 +1,72 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { ArrowUpRight, Check, Copy } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-type ClientId = 'claude' | 'cursor' | 'windsurf';
+type ClientId = 'claude' | 'claude-code' | 'cursor' | 'windsurf';
+type OS = 'mac' | 'windows' | 'linux';
 
 interface ClientOption {
   id: ClientId;
   label: string;
-  configPath: string;
-  hint: string;
+  /**
+   * 'file' clients are configured by editing a JSON config file (per-OS path).
+   * 'command' clients (Claude Code CLI) register via a terminal command.
+   */
+  kind: 'file' | 'command';
+  /** Per-OS config file path — only for 'file' clients. */
+  configPaths?: Record<OS, string>;
+  /** Terminal command — only for 'command' clients. */
+  command?: string;
+  /** i18n key + English fallback for the post-setup hint. */
+  hintKey: string;
+  hintDefault: string;
 }
 
 const CLIENTS: ClientOption[] = [
   {
     id: 'claude',
     label: 'Claude Desktop',
-    configPath: '~/Library/Application Support/Claude/claude_desktop_config.json',
-    hint: 'Edit the JSON, restart Claude, open the tool picker.',
+    kind: 'file',
+    configPaths: {
+      mac: '~/Library/Application Support/Claude/claude_desktop_config.json',
+      windows: '%APPDATA%\\Claude\\claude_desktop_config.json',
+      linux: '~/.config/Claude/claude_desktop_config.json',
+    },
+    hintKey: 'mcpSettings.hints.claude',
+    hintDefault: 'Edit the JSON, restart Claude Desktop, then open the tool picker.',
+  },
+  {
+    id: 'claude-code',
+    label: 'Claude Code',
+    kind: 'command',
+    command: 'claude mcp add aispaceflow --scope user -- npx -y @ismarzdev/aispaceflow-mcp',
+    hintKey: 'mcpSettings.hints.claudeCode',
+    hintDefault:
+      'Run it in your terminal — no file to edit. --scope user enables it in every project; drop the flag to add it to the current one only.',
   },
   {
     id: 'cursor',
     label: 'Cursor',
-    configPath: '~/.cursor/mcp.json',
-    hint: 'Settings → MCP → enable openflowkit after saving.',
+    kind: 'file',
+    configPaths: {
+      mac: '~/.cursor/mcp.json',
+      windows: '%USERPROFILE%\\.cursor\\mcp.json',
+      linux: '~/.cursor/mcp.json',
+    },
+    hintKey: 'mcpSettings.hints.cursor',
+    hintDefault: 'Settings → MCP → enable aispaceflow after saving.',
   },
   {
     id: 'windsurf',
     label: 'Windsurf',
-    configPath: '~/.codeium/windsurf/mcp_config.json',
-    hint: 'Cascade refreshes available tools on next prompt.',
+    kind: 'file',
+    configPaths: {
+      mac: '~/.codeium/windsurf/mcp_config.json',
+      windows: '%USERPROFILE%\\.codeium\\windsurf\\mcp_config.json',
+      linux: '~/.codeium/windsurf/mcp_config.json',
+    },
+    hintKey: 'mcpSettings.hints.windsurf',
+    hintDefault: 'Cascade refreshes available tools on next prompt.',
   },
 ];
 
@@ -42,7 +80,7 @@ const TOOL_GROUPS: ToolGroup[] = [
     label: 'Author',
     tools: [
       { name: 'validate_openflow_dsl', desc: 'Lint and validate agent-authored DSL' },
-      { name: 'create_viewer_url', desc: 'Turn DSL into a shareable OpenFlowKit link' },
+      { name: 'create_viewer_url', desc: 'Turn DSL into a shareable AISpaceFlow link' },
     ],
   },
   {
@@ -63,19 +101,24 @@ const TOOL_GROUPS: ToolGroup[] = [
   },
 ];
 
-function buildConfig(): string {
-  return JSON.stringify(
-    {
-      mcpServers: {
-        openflowkit: {
-          command: 'npx',
-          args: ['-y', '@ismarzdev/openflowkit-mcp'],
-        },
-      },
-    },
-    null,
-    2,
-  );
+function detectOS(): OS {
+  if (typeof navigator === 'undefined') return 'mac';
+  const ua = `${navigator.userAgent} ${navigator.platform ?? ''}`;
+  if (/Win/i.test(ua)) return 'windows';
+  if (/Mac/i.test(ua)) return 'mac';
+  return 'linux';
+}
+
+/**
+ * The MCP server entry for the generated JSON config. On Windows, `npx` must be
+ * invoked through `cmd /c` or many MCP clients fail to spawn it.
+ */
+function buildConfig(os: OS): string {
+  const server =
+    os === 'windows'
+      ? { command: 'cmd', args: ['/c', 'npx', '-y', '@ismarzdev/aispaceflow-mcp'] }
+      : { command: 'npx', args: ['-y', '@ismarzdev/aispaceflow-mcp'] };
+  return JSON.stringify({ mcpServers: { aispaceflow: server } }, null, 2);
 }
 
 function CopyButton({ value, ariaLabel }: { value: string; ariaLabel: string }): React.ReactElement {
@@ -179,9 +222,16 @@ interface MCPSettingsProps {
 export function MCPSettings({ variant = 'panel' }: MCPSettingsProps = {}): React.ReactElement {
   const { t } = useTranslation();
   const [client, setClient] = useState<ClientId>('claude');
-  const installCmd = 'npx -y @ismarzdev/openflowkit-mcp';
-  const config = buildConfig();
+  const os = useMemo(detectOS, []);
+  const installCmd = 'npx -y @ismarzdev/aispaceflow-mcp';
+  const config = buildConfig(os);
   const activeClient = CLIENTS.find((c) => c.id === client) ?? CLIENTS[0];
+  const isCommand = activeClient.kind === 'command';
+  const configPath = activeClient.configPaths?.[os] ?? activeClient.configPaths?.mac ?? '';
+
+  const installPromptCode = isCommand
+    ? `Run this in your terminal to add the aispaceflow MCP server:\n\n${activeClient.command}\n\nThen run /mcp (or restart) to confirm it connected.`
+    : `Add an MCP server called "aispaceflow" to ${configPath}. Use this entry exactly:\n\n${config}\n\nAfter saving, tell me to restart ${activeClient.label}.`;
 
   return (
     <div className="space-y-8">
@@ -196,7 +246,7 @@ export function MCPSettings({ variant = 'panel' }: MCPSettingsProps = {}): React
           <p className="mt-2 max-w-prose text-[13px] leading-relaxed text-[var(--brand-secondary)]">
             {t(
               'mcpSettings.intro',
-              'Add the OpenFlowKit MCP server to Claude Desktop, Cursor, Windsurf, or any MCP client. Your assistant uses its own model to author diagrams, while OpenFlowKit supplies local validation, templates, icon lookup, codebase analysis, and viewer links.',
+              'Add the AISpaceFlow MCP server to Claude Desktop, Claude Code, Cursor, Windsurf, or any MCP client — GUI or CLI. Your assistant uses its own model to author diagrams, while AISpaceFlow supplies local validation, templates, icon lookup, codebase analysis, and viewer links.',
             )}
           </p>
         </header>
@@ -247,25 +297,54 @@ export function MCPSettings({ variant = 'panel' }: MCPSettingsProps = {}): React
             aria-label={activeClient.label}
             className="space-y-2"
           >
+            {isCommand ? (
+              <p className="text-[12px] text-[var(--brand-secondary)]">
+                {t('mcpSettings.runInTerminal', 'Run this in your terminal:')}
+              </p>
+            ) : (
+              <p className="text-[12px] text-[var(--brand-secondary)]">
+                {t('mcpSettings.configPathLabel', 'Add to')}{' '}
+                <code className="rounded bg-[var(--brand-background)] px-1.5 py-0.5 font-mono text-[11px] text-[var(--brand-text)]">
+                  {configPath}
+                </code>
+              </p>
+            )}
             <p className="text-[12px] text-[var(--brand-secondary)]">
-              {t('mcpSettings.configPathLabel', 'Add to')}{' '}
-              <code className="rounded bg-[var(--brand-background)] px-1.5 py-0.5 font-mono text-[11px] text-[var(--brand-text)]">
-                {activeClient.configPath}
-              </code>
-            </p>
-            <p className="text-[12px] text-[var(--brand-secondary)]">
-              {activeClient.hint}{' '}
+              {t(activeClient.hintKey, activeClient.hintDefault)}{' '}
               {t(
                 'mcpSettings.keysNote',
                 'No API keys needed. Your AI client already has the model; this server adds diagram-specific tools.',
               )}
             </p>
           </div>
-          <CodeSurface
-            code={config}
-            ariaLabel={t('mcpSettings.copyConfig', 'Copy MCP config')}
-            caption="json"
-          />
+
+          {isCommand ? (
+            <div className="space-y-2">
+              <CodeSurface
+                code={activeClient.command ?? ''}
+                ariaLabel={t('mcpSettings.copyCommand', 'Copy install command')}
+                caption="shell"
+                wrap
+              />
+              <p className="text-[11px] text-[var(--brand-secondary)]">
+                {t(
+                  'mcpSettings.claudeCodeAlt',
+                  'Prefer a file? Drop the same JSON below into a .mcp.json at your project root (project scope).',
+                )}
+              </p>
+              <CodeSurface
+                code={config}
+                ariaLabel={t('mcpSettings.copyConfig', 'Copy MCP config')}
+                caption="json"
+              />
+            </div>
+          ) : (
+            <CodeSurface
+              code={config}
+              ariaLabel={t('mcpSettings.copyConfig', 'Copy MCP config')}
+              caption="json"
+            />
+          )}
         </StepRail>
 
         <StepRail index={3} title={t('mcpSettings.toolsHeading', 'Tools your assistant will use')}>
@@ -277,10 +356,13 @@ export function MCPSettings({ variant = 'panel' }: MCPSettingsProps = {}): React
               <section key={group.label} className="grid grid-cols-1 sm:grid-cols-[140px_1fr]">
                 <header className="border-b border-[var(--color-brand-border)] bg-[var(--brand-background)]/40 px-4 py-3 sm:border-b-0 sm:border-r">
                   <h5 className="text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--brand-text)]">
-                    {group.label}
+                    {t(`mcpSettings.groups.${group.label.toLowerCase()}`, group.label)}
                   </h5>
                   <p className="mt-0.5 text-[10.5px] text-[var(--brand-secondary)]">
-                    {group.tools.length} {group.tools.length === 1 ? 'tool' : 'tools'}
+                    {group.tools.length}{' '}
+                    {group.tools.length === 1
+                      ? t('mcpSettings.toolSingular', 'tool')
+                      : t('mcpSettings.toolPlural', 'tools')}
                   </p>
                 </header>
                 <ul className="divide-y divide-[var(--color-brand-border)]/60">
@@ -290,7 +372,7 @@ export function MCPSettings({ variant = 'panel' }: MCPSettingsProps = {}): React
                         {tool.name}
                       </code>
                       <span className="text-[11.5px] text-[var(--brand-secondary)]">
-                        {tool.desc}
+                        {t(`mcpSettings.toolDescs.${tool.name}`, tool.desc)}
                       </span>
                     </li>
                   ))}
@@ -304,7 +386,7 @@ export function MCPSettings({ variant = 'panel' }: MCPSettingsProps = {}): React
           <p className="text-[12px] text-[var(--brand-secondary)]">
             {t(
               'mcpSettings.tryItIntro',
-              'Paste these into your AI assistant. The install prompt asks an agentic client (Cursor, Claude Code, Windsurf) to write the config for you; the test prompt verifies the connection.',
+              'Paste these into your AI assistant. The install prompt asks an agentic client (Cursor, Claude Code, Windsurf) to set up the config for you; the test prompt verifies the connection.',
             )}
           </p>
 
@@ -319,7 +401,7 @@ export function MCPSettings({ variant = 'panel' }: MCPSettingsProps = {}): React
                 </span>
               </div>
               <CodeSurface
-                code={`Add an MCP server called "openflowkit" to ${activeClient.configPath}. Use this entry exactly:\n\n${config}\n\nAfter saving, tell me to restart ${activeClient.label}.`}
+                code={installPromptCode}
                 ariaLabel={t('mcpSettings.copyInstallPrompt', 'Copy install prompt')}
                 caption="prompt"
                 wrap
@@ -336,7 +418,7 @@ export function MCPSettings({ variant = 'panel' }: MCPSettingsProps = {}): React
                 </span>
               </div>
               <CodeSurface
-                code={`Using the openflowkit MCP server: read openflowkit://docs/dsl-cheatsheet, then write an OpenFlow DSL flowchart for a checkout flow (cart → shipping → payment → apply promo code branch → confirm). Call validate_openflow_dsl on your output, fix any errors, then call create_viewer_url. Show me the final DSL and viewer URL.`}
+                code={`Using the aispaceflow MCP server: read aispaceflow://docs/dsl-cheatsheet, then write an OpenFlow DSL flowchart for a checkout flow (cart → shipping → payment → apply promo code branch → confirm). Call validate_openflow_dsl on your output, fix any errors, then call create_viewer_url. Show me the final DSL and viewer URL.`}
                 ariaLabel={t('mcpSettings.copyTestPrompt', 'Copy test prompt')}
                 caption="prompt"
                 wrap

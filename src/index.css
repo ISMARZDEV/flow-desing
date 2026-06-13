@@ -301,26 +301,29 @@ html {
 }
 
 :root {
-  /* Brand Colors - Default: Indigo */
-  --brand-primary: #e95420;
-  --brand-secondary: #64748b;
-  --brand-surface: #ffffff;
-  --brand-background: #f8fafc;
-  --brand-text: #0f172a;
+  /* Brand Colors - Light: Mint (fresh green) */
+  --brand-primary: #019680;
+  --brand-secondary: #7a7a7a;
+  --brand-surface: #f8fbfa;
+  --brand-background: #ffffff;
+  /* Sidebar hierarchy: darker than screen, module darker still */
+  --brand-sidebar: #e5f0ec;
+  --brand-sidebar-active: #ffffff;
+  --brand-text: #142922;
 
-  /* Brand Palette */
-  --brand-primary-50: #fef4f0;
-  --brand-primary-100: #fde4d8;
-  --brand-primary-200: #fbc9b1;
-  --brand-primary-300: #f7a07a;
-  --brand-primary-400: #f07043;
-  --brand-primary-500: #e95420;
-  --brand-primary-600: #d14a1b;
-  --brand-primary-700: #b03f16;
-  --brand-primary-800: #8f3411;
-  --brand-primary-900: #6e290d;
+  /* Brand Palette - Mint */
+  --brand-primary-50: #f0faf6;
+  --brand-primary-100: #d8f3ea;
+  --brand-primary-200: #b1e7d4;
+  --brand-primary-300: #81dabb;
+  --brand-primary-400: #42b58d;
+  --brand-primary-500: #28cc93;
+  --brand-primary-600: #19976d;
+  --brand-primary-700: #158e68;
+  --brand-primary-800: #116f53;
+  --brand-primary-900: #0d4f3c;
 
-  --brand-border: #e2e8f0;
+  --brand-border: #d5e2dd;
 
   /* Dimensions */
   --brand-radius: 8px;
@@ -339,7 +342,7 @@ html {
   /* UI Effects */
   --brand-glass-blur: 12px;
   --brand-glass-opacity: 0.7;
-  --brand-glass-bg: rgba(255, 255, 255, 0.7);
+  --brand-glass-bg: rgba(248, 251, 250, 0.7);
 
   /* App Shadows */
   --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.03), 0 1px 1px rgba(15, 23, 42, 0.02);
@@ -366,19 +369,31 @@ html {
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --brand-surface: #171717;
-    --brand-background: #0a0a0a;
-    --brand-text: #f5f5f5;
-    --brand-secondary: #a3a3a3;
-    --brand-border: #262626;
-    --brand-primary-50: rgba(233, 84, 32, 0.12);
+    --brand-surface: #081317;
+    --brand-background: #030b0d;
+    --brand-sidebar: #071317;
+    --brand-sidebar-active: #050d10;
+    --brand-text: #e2e7e9;
+    --brand-secondary: #98acb3;
+    --brand-border: #21343b;
+    --brand-primary: #1abc9c;
+    --brand-primary-50: rgba(33, 213, 237, 0.14);
+    --brand-primary-100: #a8e5f0;
+    --brand-primary-200: #70daeb;
+    --brand-primary-300: #47d5eb;
+    --brand-primary-400: #33d5eb;
+    --brand-primary-500: #21d5ed;
+    --brand-primary-600: #16afca;
+    --brand-primary-700: #1489a3;
+    --brand-primary-800: #13657c;
+    --brand-primary-900: #104456;
     --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.6);
     --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.6);
     --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.7);
     --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.75);
     --shadow-overlay: 0 24px 56px rgba(0, 0, 0, 0.85);
     --shadow-floating: 0 18px 38px rgba(0, 0, 0, 0.78), 0 6px 18px rgba(0, 0, 0, 0.48);
-    --brand-glass-bg: rgba(23, 23, 23, 0.8);
+    --brand-glass-bg: rgba(14, 31, 37, 0.8);
     --color-surface-success-bg: rgba(20, 83, 45, 0.28);
     --color-surface-success-border: rgba(74, 222, 128, 0.32);
     --color-surface-success-text: #86efac;
@@ -387,7 +402,7 @@ html {
     --color-surface-warning-text: #fdba74;
     --color-surface-danger-bg: rgba(127, 29, 29, 0.32);
     --color-surface-danger-border: rgba(248, 113, 113, 0.28);
-    --color-surface-danger-text: #fca5a5;
+    --color-surface-danger-text: #fb4b4b;
     --color-surface-info-bg: rgba(30, 58, 138, 0.3);
     --color-surface-info-border: rgba(96, 165, 250, 0.28);
     --color-surface-info-text: #93c5fd;
@@ -396,19 +411,31 @@ html {
 }
 
 [data-theme='dark'] {
-  --brand-surface: #171717;
-  --brand-background: #0a0a0a;
-  --brand-text: #f5f5f5;
-  --brand-secondary: #a3a3a3;
-  --brand-border: #262626;
-  --brand-primary-50: rgba(233, 84, 32, 0.12);
+  --brand-surface: #0e1f25;
+  --brand-background: #0a1a1f;
+  --brand-sidebar: #071317;
+  --brand-sidebar-active: #050d10;
+  --brand-text: #e2e7e9;
+  --brand-secondary: #98acb3;
+  --brand-border: #21343b;
+  --brand-primary: #21d5ed;
+  --brand-primary-50: rgba(33, 213, 237, 0.14);
+  --brand-primary-100: #a8e5f0;
+  --brand-primary-200: #70daeb;
+  --brand-primary-300: #47d5eb;
+  --brand-primary-400: #33d5eb;
+  --brand-primary-500: #21d5ed;
+  --brand-primary-600: #16afca;
+  --brand-primary-700: #1489a3;
+  --brand-primary-800: #13657c;
+  --brand-primary-900: #104456;
   --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.6);
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.6);
   --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.7);
   --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.75);
   --shadow-overlay: 0 24px 56px rgba(0, 0, 0, 0.85);
   --shadow-floating: 0 18px 38px rgba(0, 0, 0, 0.78), 0 6px 18px rgba(0, 0, 0, 0.48);
-  --brand-glass-bg: rgba(23, 23, 23, 0.8);
+  --brand-glass-bg: rgba(14, 31, 37, 0.8);
   --color-surface-success-bg: rgba(20, 83, 45, 0.28);
   --color-surface-success-border: rgba(74, 222, 128, 0.32);
   --color-surface-success-text: #86efac;
@@ -712,8 +739,8 @@ body {
 
 /* ===== Selection marquee — Figma style ===== */
 .react-flow__selection {
-  background: rgba(233, 84, 32, 0.06);
-  border: 1px solid var(--brand-primary, #e95420);
+  background: color-mix(in srgb, var(--brand-primary) 8%, transparent);
+  border: 1px solid var(--brand-primary);
   border-radius: 2px;
 }
 

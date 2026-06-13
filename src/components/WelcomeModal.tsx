@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAnalyticsPreference } from '@/hooks/useAnalyticsPreference';
-import { OpenFlowLogo } from './icons/OpenFlowLogo';
+import { BrandWordmark } from './icons/BrandWordmark';
 import { Switch } from './ui/Switch';
 import { Button } from './ui/Button';
 import { writeLocalStorageString } from '@/services/storage/uiLocalStorage';
@@ -105,9 +105,9 @@ export function WelcomeModal({
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 p-4 backdrop-blur-sm animate-in fade-in duration-300">
       <div className="w-full max-w-[440px] overflow-hidden rounded-[24px] border border-[var(--color-brand-border)] bg-[var(--brand-surface)] shadow-2xl animate-in zoom-in-95 duration-300">
         <div className="px-8 pb-3 pt-10 text-center">
-          <OpenFlowLogo className="mx-auto mb-5 h-12 w-12 text-[var(--brand-primary)]" />
+          <BrandWordmark className="mx-auto mb-5 h-12 w-auto" />
           <h2 className="text-[24px] font-bold tracking-tight text-[var(--brand-text)] mb-2">
-            {t('welcome.title', 'Welcome to OpenFlowKit')}
+            {t('welcome.title', 'Welcome to AISpaceFlow')}
           </h2>
         </div>
 

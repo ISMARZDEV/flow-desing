@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Canvas Basics
-description: OpenFlowKit tuvalinde gezinmeyi, seçim yapmayı, düzenlemeyi ve çalışmanızı geri kazanmayı öğrenin.
+description: AISpaceFlow tuvalinde gezinmeyi, seçim yapmayı, düzenlemeyi ve çalışmanızı geri kazanmayı öğrenin.
 ---
 
-Tuval, OpenFlowKit’in ana düzenleme yüzeyidir. Doğrudan graf üzerinde çalışmayı ve kesin düzenlemeleri yan panellerle birleştirir.
+Tuval, AISpaceFlow’in ana düzenleme yüzeyidir. Doğrudan graf üzerinde çalışmayı ve kesin düzenlemeleri yan panellerle birleştirir.
 
 ## Tuvali ne zaman kullanmalısınız?
 

@@ -23,7 +23,7 @@ export function Testimonials(): React.ReactElement {
               <span className="font-serif italic font-normal text-white/50">Shape the engine.</span>
             </h2>
             <p className="text-xl text-white/50 leading-relaxed max-w-lg font-medium">
-              OpenFlowKit is just getting started. We are building the core engine in the open. Join
+              AISpaceFlow is just getting started. We are building the core engine in the open. Join
               us on Day 1.
             </p>
           </div>
@@ -97,7 +97,7 @@ export function Testimonials(): React.ReactElement {
             <div>
               <h3 className="text-xl font-bold text-white mb-2">Community</h3>
               <p className="text-white/50 text-sm leading-relaxed mb-6">
-                Join developers building on OpenFlowKit.
+                Join developers building on AISpaceFlow.
               </p>
 
               <div className="flex items-center -space-x-3">

@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Roadmap
-description: Current product direction for OpenFlowKit, separated clearly from already shipped behavior.
+description: Current product direction for AISpaceFlow, separated clearly from already shipped behavior.
 ---
 
 This docs site focuses mainly on current shipped behavior, but this page exists to make the near-term direction explicit without pretending those items are already done.
@@ -23,7 +23,7 @@ These capabilities have been released and are documented in the docs:
 - **Workspace Home**: Create, open, import, and organize multiple flows
 - **Local-First Storage**: All diagrams saved in browser, survives refresh
 - **Flowpilot AI**: Generate diagrams from prompts
-- **MCP Server**: Drive OpenFlowKit from Claude Desktop, Cursor, Windsurf, and other MCP clients
+- **MCP Server**: Drive AISpaceFlow from Claude Desktop, Cursor, Windsurf, and other MCP clients
 - **Mermaid Import**: Import and edit Mermaid diagrams
 - **OpenFlow DSL**: Text-based diagram definition language
 - **Infrastructure Sync**: Import Terraform, Kubernetes, Docker Compose

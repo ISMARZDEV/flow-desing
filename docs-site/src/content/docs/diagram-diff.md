@@ -8,7 +8,7 @@ Diagram Diff & Compare lets you inspect how the current graph differs from a sav
 
 ## What compare mode shows
 
-When compare mode is active, OpenFlowKit surfaces:
+When compare mode is active, AISpaceFlow surfaces:
 
 - added nodes and edges
 - removed nodes and edges

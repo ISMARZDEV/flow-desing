@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://openflowkit.com/sitemap.xml
-Sitemap: https://docs.openflowkit.com/sitemap-index.xml
+Sitemap: https://aispaceflow.com/sitemap.xml
+Sitemap: https://docs.aispaceflow.com/sitemap-index.xml

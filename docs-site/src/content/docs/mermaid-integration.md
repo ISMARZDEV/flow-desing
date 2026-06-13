@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Mermaid Integration
-description: Import, edit, validate, and export Mermaid while keeping OpenFlowKit as the visual editing workspace.
+description: Import, edit, validate, and export Mermaid while keeping AISpaceFlow as the visual editing workspace.
 ---
 
-OpenFlowKit includes Mermaid import, editing, and export paths, but Mermaid should be treated as a compatibility workflow rather than the editor's only source of truth.
+AISpaceFlow includes Mermaid import, editing, and export paths, but Mermaid should be treated as a compatibility workflow rather than the editor's only source of truth.
 
 ## What Mermaid support is for
 
@@ -31,7 +31,7 @@ The export menu can copy Mermaid text for the current graph to the clipboard. Th
 
 ## Fidelity expectations
 
-Mermaid round-tripping is useful, but not every OpenFlowKit concept maps perfectly. Be especially careful with:
+Mermaid round-tripping is useful, but not every AISpaceFlow concept maps perfectly. Be especially careful with:
 
 - highly visual hand-tuned layouts
 - provider-specific architecture icon presentation

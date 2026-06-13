@@ -1,6 +1,6 @@
-export const APP_URL = 'https://app.openflowkit.com';
-export const DOCS_URL = 'https://docs.openflowkit.com';
-export const ROADMAP_URL = 'https://docs.openflowkit.com/roadmap';
+export const APP_URL = 'https://app.aispaceflow.com';
+export const DOCS_URL = 'https://docs.aispaceflow.com';
+export const ROADMAP_URL = 'https://docs.aispaceflow.com/roadmap';
 export const GITHUB_REPO_URL = 'https://github.com/ISMARZDEV/flow-desing';
 export const GITHUB_REPO_API_URL = 'https://api.github.com/repos/ISMARZDEV/flow-desing';
 export const GITHUB_REPO_SLUG = 'ISMARZDEV/flow-desing';

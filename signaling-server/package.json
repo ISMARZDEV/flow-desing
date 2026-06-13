@@ -1,5 +1,5 @@
 {
-  "name": "openflowkit-signaling",
+  "name": "aispaceflow-signaling",
   "version": "1.0.0",
   "private": true,
   "scripts": {

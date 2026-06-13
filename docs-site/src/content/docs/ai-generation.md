@@ -4,13 +4,13 @@ title: AI Generation
 description: Generate and refine diagrams in Studio with Flowpilot, BYOK providers, code-to-architecture, and structured imports.
 ---
 
-OpenFlowKit includes AI-assisted diagram generation through the Studio rail. Flowpilot is best used for first drafts, structural revisions, and code-backed architecture exploration.
+AISpaceFlow includes AI-assisted diagram generation through the Studio rail. Flowpilot is best used for first drafts, structural revisions, and code-backed architecture exploration.
 
-AI generation is most valuable when you need to go from ambiguity to structure quickly. It is not the only way to create diagrams in OpenFlowKit, and it is usually not the final step. Think of it as a draft accelerator.
+AI generation is most valuable when you need to go from ambiguity to structure quickly. It is not the only way to create diagrams in AISpaceFlow, and it is usually not the final step. Think of it as a draft accelerator.
 
 ## Access and setup
 
-Flowpilot lives inside Studio. If an API key is not configured yet, OpenFlowKit prompts you to open the shared AI settings modal instead of keeping setup inline inside the panel.
+Flowpilot lives inside Studio. If an API key is not configured yet, AISpaceFlow prompts you to open the shared AI settings modal instead of keeping setup inline inside the panel.
 
 That matters for two reasons:
 

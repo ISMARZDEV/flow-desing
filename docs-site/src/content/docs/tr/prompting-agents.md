@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Prompting AI Agents
-description: OpenFlowKit için diyagram çıktısı isterken kodlama yardımcılarına ve AI sistemlerine daha iyi istemler yazın.
+description: AISpaceFlow için diyagram çıktısı isterken kodlama yardımcılarına ve AI sistemlerine daha iyi istemler yazın.
 ---
 
 Cursor, Copilot, ChatGPT, Claude veya başka bir ajan kullanıyor olmanızdan bağımsız olarak; iyi istem kalitesi, model markasından daha belirleyicidir.

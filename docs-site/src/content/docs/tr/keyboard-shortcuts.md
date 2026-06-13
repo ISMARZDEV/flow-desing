@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Keyboard Shortcuts
-description: OpenFlowKit’te düzenleme, gezinme ve diyagram üretimi için mevcut klavye kısayolları.
+description: AISpaceFlow’te düzenleme, gezinme ve diyagram üretimi için mevcut klavye kısayolları.
 ---
 
 Bu tablolar artık uygulamada gösterilen güncel kısayolları özetler.

@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Node Types
-description: Understand the core node families available in OpenFlowKit and how they map to different diagram workflows.
+description: Understand the core node families available in AISpaceFlow and how they map to different diagram workflows.
 ---
 
-OpenFlowKit supports both generic and family-specific nodes. The node model in the app covers flow, architecture, mind map, journey, class, ER, annotation, grouping, and media use cases.
+AISpaceFlow supports both generic and family-specific nodes. The node model in the app covers flow, architecture, mind map, journey, class, ER, annotation, grouping, and media use cases.
 
 ## Core node families
 
@@ -43,7 +43,7 @@ Journey-oriented nodes help when the diagram represents user or process stages i
 
 ### Media and wireframe nodes
 
-OpenFlowKit also supports image nodes and browser/mobile wireframe-style nodes for product, UX, and annotated architecture workflows.
+AISpaceFlow also supports image nodes and browser/mobile wireframe-style nodes for product, UX, and annotated architecture workflows.
 
 ## How to choose
 

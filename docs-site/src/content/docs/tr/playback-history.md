@@ -4,7 +4,7 @@ title: Playback & History
 description: Çalışmanızı geri kazanmak ve diyagram evrimini izlemek için undo, snapshot ve oynatma durumunu kullanın.
 ---
 
-OpenFlowKit’te iki farklı ama ilişkili kurtarma sistemi vardır:
+AISpaceFlow’te iki farklı ama ilişkili kurtarma sistemi vardır:
 
 - standart undo/redo geçmişi
 - belge veya sekme üzerinde saklanan snapshot tabanlı geçmiş ve playback durumu

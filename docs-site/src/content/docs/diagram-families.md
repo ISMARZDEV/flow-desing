@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Diagram Families
-description: Choose the right diagram family in OpenFlowKit for flows, architecture maps, mind maps, journeys, class diagrams, ER diagrams, and more.
+description: Choose the right diagram family in AISpaceFlow for flows, architecture maps, mind maps, journeys, class diagrams, ER diagrams, and more.
 ---
 
-OpenFlowKit supports multiple diagram families because not every problem should be forced into the same node and edge model.
+AISpaceFlow supports multiple diagram families because not every problem should be forced into the same node and edge model.
 
 ## Families in the current editor
 

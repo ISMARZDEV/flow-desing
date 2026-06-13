@@ -4,7 +4,7 @@ title: Choose an Input Mode
 description: Decide when to use templates, AI, OpenFlow DSL, Mermaid, structured imports, or direct canvas editing.
 ---
 
-OpenFlowKit supports multiple ways to create a diagram. The best choice depends on what source material already exists and how deterministic you need the result to be.
+AISpaceFlow supports multiple ways to create a diagram. The best choice depends on what source material already exists and how deterministic you need the result to be.
 
 ## Quick guide
 
@@ -31,7 +31,7 @@ OpenFlowKit supports multiple ways to create a diagram. The best choice depends 
 
 - Using AI when you already have a precise source artifact.
 - Starting from a blank canvas when a starter template is already close to the workflow.
-- Using Mermaid as the editing master when fidelity inside OpenFlowKit matters more.
+- Using Mermaid as the editing master when fidelity inside AISpaceFlow matters more.
 - Redrawing infrastructure manually when the source files already exist.
 
 ## Recommended pattern

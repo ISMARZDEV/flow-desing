@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Payment Flow Visualization
-description: Abonelik, checkout, retry ve istisna yolları içeren ödeme sistemlerini OpenFlowKit ile modelleyin.
+description: Abonelik, checkout, retry ve istisna yolları içeren ödeme sistemlerini AISpaceFlow ile modelleyin.
 ---
 
-Ödeme sistemleri, mutlu yolun ötesinde retry, hata işleme, manuel inceleme ve bildirim dalları içerdiği için OpenFlowKit için çok uygun bir kullanım alanıdır.
+Ödeme sistemleri, mutlu yolun ötesinde retry, hata işleme, manuel inceleme ve bildirim dalları içerdiği için AISpaceFlow için çok uygun bir kullanım alanıdır.
 
 ## İyi bir ödeme diyagramı neleri içermelidir?
 

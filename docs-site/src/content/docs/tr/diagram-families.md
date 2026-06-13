@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Diagram Families
-description: Akışlar, mimari haritalar, zihin haritaları, journey diyagramları, sınıf diyagramları ve ER diyagramları için doğru OpenFlowKit ailesini seçin.
+description: Akışlar, mimari haritalar, zihin haritaları, journey diyagramları, sınıf diyagramları ve ER diyagramları için doğru AISpaceFlow ailesini seçin.
 ---
 
-OpenFlowKit birden fazla diyagram ailesini destekler; çünkü her problem aynı düğüm ve kenar modeline zorlanmamalıdır.
+AISpaceFlow birden fazla diyagram ailesini destekler; çünkü her problem aynı düğüm ve kenar modeline zorlanmamalıdır.
 
 ## Mevcut aileler
 

@@ -1,5 +1,5 @@
 export const DEFAULT_DOCS_LANGUAGE = 'en';
-export const DOCS_SITE_ORIGIN = 'https://docs.openflowkit.com';
+export const DOCS_SITE_ORIGIN = 'https://docs.aispaceflow.com';
 
 export function resolveDocsLanguage(language?: string): string {
     return language === 'tr' ? 'tr' : DEFAULT_DOCS_LANGUAGE;

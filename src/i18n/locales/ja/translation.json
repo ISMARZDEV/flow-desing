@@ -218,7 +218,7 @@
     },
     "solution": {
       "title": "解決策",
-      "description": "OpenFlowKitは両方の長所を組み合わせています。"
+      "description": "AISpaceFlowは両方の長所を組み合わせています。"
     },
     "demo": {
       "title": "スケッチは簡単に。",
@@ -243,7 +243,7 @@
     },
     "footer": {
       "rights": "無断複写・転載を禁じます。",
-      "madeWith": "OpenFlowKitチームによって❤️を込めて作られました"
+      "madeWith": "AISpaceFlowチームによって❤️を込めて作られました"
     }
   },
   "home": {
@@ -385,7 +385,7 @@
     "importFailed": "インポートに失敗しました"
   },
   "welcome": {
-    "title": "OpenFlowKit",
+    "title": "AISpaceFlow",
     "description": "開発者向けキャンバスで美しく構造化された図を設計します。",
     "press": "押す",
     "shortcuts": "ショートカット表示",
@@ -420,7 +420,7 @@
   "pricing": {
     "title": "プレミアム機能。",
     "subtitle": "コストはゼロ。",
-    "description": "OpenFlowKitは100%オープンソースです。隠されたエンタープライズ版はありません。",
+    "description": "AISpaceFlowは100%オープンソースです。隠されたエンタープライズ版はありません。",
     "mitLicense": "MITライセンス",
     "freeForever": "永久無料。",
     "fullAccess": "コアエンジンへの完全アクセス。",
@@ -491,7 +491,7 @@
     "badge": "ワークフロー",
     "title": "1つのエンジン。",
     "subtitle": "3つのネイティブワークフロー。",
-    "description": "OpenFlowKitはあなたのツールに適応します。",
+    "description": "AISpaceFlowはあなたのツールに適応します。",
     "engineering": "エンジニアリング",
     "diagramAsCode": "コードとしての図",
     "engineeringDesc": "DSLまたはMermaid.jsで図を書きます。",
@@ -509,7 +509,7 @@
     "badge": "プラグイン不要",
     "title": "コードをコピー。",
     "subtitle": "デザインを貼り付け。",
-    "description": "OpenFlowKitからコピーしてFigmaに直接貼り付けると、編集可能なテキストやきれいなベクター形状になります。",
+    "description": "AISpaceFlowからコピーしてFigmaに直接貼り付けると、編集可能なテキストやきれいなベクター形状になります。",
     "editableText": "編集可能なテキスト",
     "vectorFidelity": "ベクター忠実度",
     "selected": "選択済み",
@@ -520,13 +520,13 @@
     "badge": "構築中",
     "title": "公開での作成。",
     "subtitle": "エンジンを形作る。",
-    "description": "OpenFlowKitはまだ始まったばかりです。初日から参加してください。",
+    "description": "AISpaceFlowはまだ始まったばかりです。初日から参加してください。",
     "starTheRepo": "リポジトリにスターを付ける",
     "openSource": "オープンソース",
     "openSourceDesc": "MITライセンス。コードを読み、PRを送信します。",
     "prsWelcome": "PRを歓迎します",
     "community": "コミュニティ",
-    "communityDesc": "OpenFlowKitを活用している開発者に参加しましょう。",
+    "communityDesc": "AISpaceFlowを活用している開発者に参加しましょう。",
     "roadmap": "ロードマップ",
     "coreRenderer": "コアレンダラー",
     "flowpilotAI": "Flowpilot 人工知能"
@@ -1453,7 +1453,7 @@
   },
   "mcpSettings": {
     "title": "AIツールを接続（MCP）",
-    "intro": "OpenFlowKit MCP サーバーを Claude Desktop、Cursor、Windsurf、その他の MCP クライアントに追加します。アシスタントはローカルで動く図表ツールを獲得します。API キーは不要、データはマシンから外に出ません。",
+    "intro": "AISpaceFlow MCP サーバーを Claude Desktop、Cursor、Windsurf、その他の MCP クライアントに追加します。アシスタントはローカルで動く図表ツールを獲得します。API キーは不要、データはマシンから外に出ません。",
     "installHeading": "サーバーをインストール",
     "installNote": "Node 18+ が必要です。グローバルインストールは不要、npx が必要に応じて取得します。",
     "configHeading": "AI アシスタントに追加",
@@ -1487,7 +1487,7 @@
   "mcp": {
     "pageTitle": "Connect AI tools",
     "pageSubtitle": "Give any MCP client first-class diagramming tools. Local-first, no API key.",
-    "visualAlt": "Your AI client connects to the OpenFlowKit MCP server over stdio, which provides local diagramming tools.",
+    "visualAlt": "Your AI client connects to the AISpaceFlow MCP server over stdio, which provides local diagramming tools.",
     "visualClient": "Your AI client",
     "visualCaption": "Local · stdio · no API key"
   }

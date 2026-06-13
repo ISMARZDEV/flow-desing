@@ -218,7 +218,7 @@
     },
     "solution": {
       "title": "La solución",
-      "description": "OpenFlowKit combina lo mejor de ambos mundos."
+      "description": "AISpaceFlow combina lo mejor de ambos mundos."
     },
     "demo": {
       "title": "Simple para esbozar.",
@@ -243,11 +243,11 @@
     },
     "footer": {
       "rights": "Todos los derechos reservados.",
-      "madeWith": "Hecho con ❤️ por el equipo OpenFlowKit"
+      "madeWith": "Hecho con ❤️ por el equipo AISpaceFlow"
     }
   },
   "home": {
-    "appName": "OpenFlowKit",
+    "appName": "AISpaceFlow",
     "title": "Panel",
     "description": "Administre sus flujos y diagramas.",
     "recentFiles": "Archivos recientes",
@@ -385,7 +385,7 @@
     "importFailed": "Error al importar"
   },
   "welcome": {
-    "title": "OpenFlowKit",
+    "title": "AISpaceFlow",
     "description": "Diseñe hermosos diagramas estructurados con un lienzo orientado al desarrollador.",
     "press": "Presione",
     "shortcuts": "para atajos",
@@ -420,7 +420,7 @@
   "pricing": {
     "title": "Características premium.",
     "subtitle": "Precio de cero dólares.",
-    "description": "OpenFlowKit es 100% open source. No hay edición Enterprise oculta.",
+    "description": "AISpaceFlow es 100% open source. No hay edición Enterprise oculta.",
     "mitLicense": "Licencia MIT",
     "freeForever": "Gratis para siempre.",
     "fullAccess": "Acceso completo al motor principal.",
@@ -491,7 +491,7 @@
     "badge": "Flujos de trabajo",
     "title": "Un motor.",
     "subtitle": "Tres flujos nativos.",
-    "description": "OpenFlowKit se adapta a tu herramienta.",
+    "description": "AISpaceFlow se adapta a tu herramienta.",
     "engineering": "Ingeniería",
     "diagramAsCode": "DIAGRAMA COMO CÓDIGO",
     "engineeringDesc": "Escribe diagramas en DSL o Mermaid.js.",
@@ -520,13 +520,13 @@
     "badge": "En construcción",
     "title": "Construir en público.",
     "subtitle": "Dar forma al motor.",
-    "description": "OpenFlowKit está empezando. Únete desde el día 1.",
+    "description": "AISpaceFlow está empezando. Únete desde el día 1.",
     "starTheRepo": "Marcar el repositorio con estrella",
     "openSource": "Open Source",
     "openSourceDesc": "Licencia MIT. Lee el código, envía PRs.",
     "prsWelcome": "PRs bienvenidos",
     "community": "Comunidad",
-    "communityDesc": "Únete a desarrolladores que construyen con OpenFlowKit.",
+    "communityDesc": "Únete a desarrolladores que construyen con AISpaceFlow.",
     "roadmap": "Hoja de ruta",
     "coreRenderer": "Motor principal",
     "flowpilotAI": "Flowpilot"
@@ -572,7 +572,7 @@
       },
       "dslSyntax": {
         "title": "Sintaxis DSL",
-        "description": "Muéstrame un ejemplo del DSL OpenFlowKit.",
+        "description": "Muéstrame un ejemplo del DSL AISpaceFlow.",
         "icon": "{}"
       }
     }
@@ -1453,7 +1453,7 @@
   },
   "mcpSettings": {
     "title": "Conectar herramientas de IA (MCP)",
-    "intro": "Añade el servidor MCP de OpenFlowKit a Claude Desktop, Cursor, Windsurf o cualquier cliente MCP. Tu asistente gana herramientas de diagramación que se ejecutan localmente, sin claves de API, sin que tus datos salgan de tu máquina.",
+    "intro": "Añade el servidor MCP de AISpaceFlow a Claude Desktop, Claude Code, Cursor, Windsurf o cualquier cliente MCP — con interfaz gráfica o por terminal. Tu asistente gana herramientas de diagramación que se ejecutan localmente, sin claves de API, sin que tus datos salgan de tu máquina.",
     "installHeading": "Instalar el servidor",
     "installNote": "Requiere Node 18+. Sin instalación global, npx descarga bajo demanda.",
     "configHeading": "Añadir a tu asistente de IA",
@@ -1482,12 +1482,38 @@
     "testPromptLabel": "Prompt de prueba",
     "testPromptHint": "Pega en cualquier cliente conectado",
     "copyInstallPrompt": "Copiar prompt de instalación",
-    "copyTestPrompt": "Copiar prompt de prueba"
+    "copyTestPrompt": "Copiar prompt de prueba",
+    "copyCommand": "Copiar comando",
+    "runInTerminal": "Ejecuta esto en tu terminal:",
+    "claudeCodeAlt": "¿Preferís un archivo? Pegá el mismo JSON de abajo en un .mcp.json en la raíz de tu proyecto (alcance de proyecto).",
+    "hints": {
+      "claude": "Edita el JSON, reinicia Claude Desktop y abre el selector de herramientas.",
+      "claudeCode": "Se corre en la terminal — sin archivos que editar. --scope user lo activa en todos tus proyectos; quitá el flag para añadirlo solo al actual.",
+      "cursor": "Ajustes → MCP → activá aispaceflow tras guardar.",
+      "windsurf": "Cascade actualiza las herramientas disponibles en el próximo prompt."
+    },
+    "toolSingular": "herramienta",
+    "toolPlural": "herramientas",
+    "groups": {
+      "author": "Crear",
+      "inspect": "Inspeccionar",
+      "discover": "Descubrir"
+    },
+    "toolDescs": {
+      "validate_openflow_dsl": "Valida y revisa el DSL generado por el agente",
+      "create_viewer_url": "Convierte el DSL en un enlace compartible de AISpaceFlow",
+      "analyze_codebase": "Resume la estructura del código para diagramar",
+      "find_icon": "Encuentra los slugs exactos de íconos de nube y desarrollo",
+      "list_starter_templates": "Lista las plantillas de diagrama disponibles",
+      "get_starter_template": "Obtiene una plantilla específica por nombre",
+      "list_diagram_node_types": "Lista los tipos de nodo y formas soportados",
+      "server_info": "Versión del servidor e información de capacidades"
+    }
   },
   "mcp": {
     "pageTitle": "Connect AI tools",
     "pageSubtitle": "Give any MCP client first-class diagramming tools. Local-first, no API key.",
-    "visualAlt": "Your AI client connects to the OpenFlowKit MCP server over stdio, which provides local diagramming tools.",
+    "visualAlt": "Your AI client connects to the AISpaceFlow MCP server over stdio, which provides local diagramming tools.",
     "visualClient": "Your AI client",
     "visualCaption": "Local · stdio · no API key"
   }

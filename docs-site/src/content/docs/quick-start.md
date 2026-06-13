@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Quick Start
-description: Create your first OpenFlowKit diagram from builder templates, imports, AI, code, or the canvas.
+description: Create your first AISpaceFlow diagram from builder templates, imports, AI, code, or the canvas.
 ---
 
 This is the fastest reliable way to get productive if you are building software, documenting systems, or preparing technical diagrams for docs and reviews.
@@ -20,7 +20,7 @@ Each flow opens in the editor only after a real document exists.
 
 ## 2. Pick the strongest input you already have
 
-OpenFlowKit works best when you start from the most truthful source available, then refine visually.
+AISpaceFlow works best when you start from the most truthful source available, then refine visually.
 
 ### Template-first
 

@@ -1,14 +1,14 @@
 ---
 draft: false
 title: Introduction
-description: OpenFlowKit; teknik akışlar, mimari diyagramlar, kod tabanlı temsil ve yapay zeka destekli düzenleme için local-first bir diyagram çalışma alanıdır.
+description: AISpaceFlow; teknik akışlar, mimari diyagramlar, kod tabanlı temsil ve yapay zeka destekli düzenleme için local-first bir diyagram çalışma alanıdır.
 ---
 
-OpenFlowKit, teknik ekipler için tasarlanmış local-first bir diyagram çalışma alanıdır. Görsel tuvali, kod dostu temsilleri, deterministik içe aktarma yollarını, yapay zeka destekli üretimi ve paylaşım/dışa aktarma akışlarını tek bir tarayıcı tabanlı üründe birleştirir.
+AISpaceFlow, teknik ekipler için tasarlanmış local-first bir diyagram çalışma alanıdır. Görsel tuvali, kod dostu temsilleri, deterministik içe aktarma yollarını, yapay zeka destekli üretimi ve paylaşım/dışa aktarma akışlarını tek bir tarayıcı tabanlı üründe birleştirir.
 
-## OpenFlowKit nerede güçlüdür?
+## AISpaceFlow nerede güçlüdür?
 
-OpenFlowKit özellikle diyagramın zaman içinde evrilmesi gereken durumlarda güçlüdür:
+AISpaceFlow özellikle diyagramın zaman içinde evrilmesi gereken durumlarda güçlüdür:
 
 - boş tuval, şablon, yapay zeka istemi, kod temsili veya mevcut kaynak girdiden başlayabilirsiniz
 - sonucu tek seferlik bir çıktı gibi değil, düzenlenebilir bir çalışma yüzeyi gibi geliştirebilirsiniz
@@ -47,7 +47,7 @@ Diyagram durumu varsayılan olarak tarayıcıda kalır. Ne zaman dışa aktaraca
 
 ### Birden fazla giriş modu
 
-OpenFlowKit tek bir kaynak doğruluğu modeline sizi zorlamaz. Görsel düzenleme, yapay zeka, OpenFlow DSL, Mermaid veya yapılandırılmış içe aktarma arasında ihtiyaç bazlı geçiş yapabilirsiniz.
+AISpaceFlow tek bir kaynak doğruluğu modeline sizi zorlamaz. Görsel düzenleme, yapay zeka, OpenFlow DSL, Mermaid veya yapılandırılmış içe aktarma arasında ihtiyaç bazlı geçiş yapabilirsiniz.
 
 ### Düzenlenebilir çıktılar
 

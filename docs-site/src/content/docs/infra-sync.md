@@ -23,7 +23,7 @@ Use Infrastructure Sync when:
 
 ## Why it is different from AI import
 
-AI import is useful when the model needs to interpret messy or conceptual input. Infrastructure Sync is for cases where the source artifact already contains the structure and you want OpenFlowKit to parse it rather than reinterpret it.
+AI import is useful when the model needs to interpret messy or conceptual input. Infrastructure Sync is for cases where the source artifact already contains the structure and you want AISpaceFlow to parse it rather than reinterpret it.
 
 That distinction matters for trust. If the goal is to stay close to the underlying infra source, deterministic parsing is usually the better first move.
 
@@ -45,7 +45,7 @@ That distinction matters for trust. If the goal is to stay close to the underlyi
 
 ## After import
 
-The result is still an editable OpenFlowKit diagram. After applying it to the canvas, you can:
+The result is still an editable AISpaceFlow diagram. After applying it to the canvas, you can:
 
 - annotate it
 - regroup it

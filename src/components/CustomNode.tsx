@@ -155,7 +155,7 @@ function CustomNode(props: LegacyNodeProps<NodeData>): React.ReactElement {
 
   const needsSquareAspect = NEEDS_SQUARE_ASPECT.has(activeShape);
   const selectionRing =
-    isActiveSelected && !isComplexShape ? `, 0 0 0 2px var(--brand-primary, #e95420)` : '';
+    isActiveSelected && !isComplexShape ? `, 0 0 0 2px var(--brand-primary, #28cc93)` : '';
   const animateIn = data.freshlyAdded === true;
   const containerStyle: React.CSSProperties = {
     minWidth,

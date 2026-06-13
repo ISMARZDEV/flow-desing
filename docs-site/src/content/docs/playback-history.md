@@ -4,7 +4,7 @@ title: Playback & History
 description: Use undo, snapshots, and playback-related state to recover work and review diagram evolution.
 ---
 
-OpenFlowKit has two related but distinct recovery systems:
+AISpaceFlow has two related but distinct recovery systems:
 
 - regular undo/redo history
 - snapshot-based history and playback state stored on tabs or documents

@@ -218,7 +218,7 @@
     },
     "solution": {
       "title": "解决方案",
-      "description": "OpenFlowKit 结合了两者的优点。"
+      "description": "AISpaceFlow 结合了两者的优点。"
     },
     "demo": {
       "title": "轻松绘制草图。",
@@ -243,7 +243,7 @@
     },
     "footer": {
       "rights": "保留所有权利。",
-      "madeWith": "由 OpenFlowKit 团队用心制作 ❤️"
+      "madeWith": "由 AISpaceFlow 团队用心制作 ❤️"
     }
   },
   "home": {
@@ -385,7 +385,7 @@
     "importFailed": "导入失败"
   },
   "welcome": {
-    "title": "OpenFlowKit",
+    "title": "AISpaceFlow",
     "description": "使用以开发者为中心的画布设计精美的结构化图表。",
     "press": "按下",
     "shortcuts": "查看快捷键",
@@ -420,7 +420,7 @@
   "pricing": {
     "title": "高级功能。",
     "subtitle": "零成本。",
-    "description": "OpenFlowKit 100% 开源。没有隐藏在销售电话背后的企业版。",
+    "description": "AISpaceFlow 100% 开源。没有隐藏在销售电话背后的企业版。",
     "mitLicense": "MIT 协议",
     "freeForever": "永久免费。",
     "fullAccess": "完全访问核心引擎。",
@@ -491,7 +491,7 @@
     "badge": "工作流",
     "title": "一个引擎。",
     "subtitle": "三种原生工作流。",
-    "description": "OpenFlowKit 适应你已经在使用的工具。",
+    "description": "AISpaceFlow 适应你已经在使用的工具。",
     "engineering": "工程",
     "diagramAsCode": "代码即图表",
     "engineeringDesc": "使用 DSL 或 Mermaid.js 语法编写图表。",
@@ -509,7 +509,7 @@
     "badge": "无需插件",
     "title": "复制代码。",
     "subtitle": "粘贴设计。",
-    "description": "从 OpenFlowKit 复制直贴到 Figma — 你将获得可编辑文本和矢量形状。",
+    "description": "从 AISpaceFlow 复制直贴到 Figma — 你将获得可编辑文本和矢量形状。",
     "editableText": "可编辑文本",
     "vectorFidelity": "矢量保真度",
     "selected": "已选择",
@@ -520,7 +520,7 @@
     "badge": "建设中",
     "title": "公开构建。",
     "subtitle": "塑造引擎。",
-    "description": "OpenFlowKit 才刚刚起步。从第一天起就加入我们。",
+    "description": "AISpaceFlow 才刚刚起步。从第一天起就加入我们。",
     "starTheRepo": "给仓库点赞",
     "openSource": "开源",
     "openSourceDesc": "MIT 协议。阅读源码，提交 PR。",
@@ -1453,7 +1453,7 @@
   },
   "mcpSettings": {
     "title": "连接 AI 工具（MCP）",
-    "intro": "将 OpenFlowKit MCP 服务器添加到 Claude Desktop、Cursor、Windsurf 或任意 MCP 客户端。你的助手将获得本地运行的图表工具，无需 API 密钥，数据不会离开你的机器。",
+    "intro": "将 AISpaceFlow MCP 服务器添加到 Claude Desktop、Cursor、Windsurf 或任意 MCP 客户端。你的助手将获得本地运行的图表工具，无需 API 密钥，数据不会离开你的机器。",
     "installHeading": "安装服务器",
     "installNote": "需要 Node 18+。无需全局安装，npx 按需拉取。",
     "configHeading": "添加到 AI 助手",
@@ -1487,7 +1487,7 @@
   "mcp": {
     "pageTitle": "Connect AI tools",
     "pageSubtitle": "Give any MCP client first-class diagramming tools. Local-first, no API key.",
-    "visualAlt": "Your AI client connects to the OpenFlowKit MCP server over stdio, which provides local diagramming tools.",
+    "visualAlt": "Your AI client connects to the AISpaceFlow MCP server over stdio, which provides local diagramming tools.",
     "visualClient": "Your AI client",
     "visualCaption": "Local · stdio · no API key"
   }

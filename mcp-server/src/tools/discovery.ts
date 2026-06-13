@@ -10,15 +10,25 @@ const NODE_TYPE_CATALOG = [
   { type: 'architecture', usage: 'Cloud / infra resource (AWS, Azure, GCP, CNCF, Docker).' },
   { type: 'browser', usage: 'Web page or frontend client.' },
   { type: 'mobile', usage: 'Mobile screen.' },
-  { type: 'note', usage: 'Callout / annotation. Connect with `..` to attach.' },
+  { type: 'note', usage: 'Callout / annotation. Connect with `..>` to attach.' },
 ];
 
 const EDGE_STYLES = [
   { syntax: '->', usage: 'Default edge.' },
   { syntax: '->|label|', usage: 'Edge with an inline label (e.g. Yes / No / HTTP).' },
-  { syntax: '==>', usage: 'Primary / critical path. Renders heavier.' },
-  { syntax: '-->', usage: 'Secondary / soft flow.' },
-  { syntax: '..', usage: 'Async, error, or optional flow. Renders dotted.' },
+  { syntax: '==>', usage: 'Primary / critical path. Renders heavier (thick).' },
+  { syntax: '-->', usage: 'Secondary / soft flow (curved).' },
+  { syntax: '..>', usage: 'Async, error, or optional flow. Renders dotted/dashed.' },
+];
+
+const CONTAINER_SYNTAX = [
+  {
+    syntax: 'group "Label" { ... }',
+    usage:
+      'Container/section frame. Wrap node declarations to render a labeled box; ' +
+      'groups nest. Quotes around the label are required and there is NO id before ' +
+      'the quoted label. Close with `}` on its own line.',
+  },
 ];
 
 export function registerDiscoveryTools(server: McpServer): void {
@@ -34,7 +44,11 @@ export function registerDiscoveryTools(server: McpServer): void {
       content: [
         {
           type: 'text' as const,
-          text: JSON.stringify({ nodeTypes: NODE_TYPE_CATALOG, edgeStyles: EDGE_STYLES }, null, 2),
+          text: JSON.stringify(
+            { nodeTypes: NODE_TYPE_CATALOG, edgeStyles: EDGE_STYLES, containers: CONTAINER_SYNTAX },
+            null,
+            2
+          ),
         },
       ],
     })
@@ -68,11 +82,11 @@ export function registerDiscoveryTools(server: McpServer): void {
                 'server_info',
               ],
               resources: [
-                'openflowkit://docs/dsl-cheatsheet',
-                'openflowkit://templates',
-                'openflowkit://templates/{name}',
-                'openflowkit://icons',
-                'openflowkit://icons/{provider}',
+                'aispaceflow://docs/dsl-cheatsheet',
+                'aispaceflow://templates',
+                'aispaceflow://templates/{name}',
+                'aispaceflow://icons',
+                'aispaceflow://icons/{provider}',
               ],
               prompts: [
                 'flowchart_from_description',

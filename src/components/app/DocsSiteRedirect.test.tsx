@@ -30,7 +30,7 @@ describe('DocsSiteRedirect', () => {
         );
 
         expect(screen.getByText('Opening docs')).toBeTruthy();
-        expect(replaceSpy).toHaveBeenCalledWith('https://docs.openflowkit.com/');
+        expect(replaceSpy).toHaveBeenCalledWith('https://docs.aispaceflow.com/');
     });
 
     it('redirects language-specific docs routes to the docs site', () => {
@@ -42,6 +42,6 @@ describe('DocsSiteRedirect', () => {
             </MemoryRouter>
         );
 
-        expect(replaceSpy).toHaveBeenCalledWith('https://docs.openflowkit.com/tr/quick-start/');
+        expect(replaceSpy).toHaveBeenCalledWith('https://docs.aispaceflow.com/tr/quick-start/');
     });
 });

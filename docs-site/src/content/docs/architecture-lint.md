@@ -4,7 +4,7 @@ title: Architecture Linting
 description: Define JSON-based architecture rules in Studio and highlight diagram violations in real time.
 ---
 
-Architecture Linting lets you define rules that catch violations directly on the canvas. It is the closest thing OpenFlowKit has to diagram linting for system design.
+Architecture Linting lets you define rules that catch violations directly on the canvas. It is the closest thing AISpaceFlow has to diagram linting for system design.
 
 ## Where it lives
 

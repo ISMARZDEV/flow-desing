@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Choose an Export Format
-description: Pick the right OpenFlowKit export format for editing, docs, collaboration, embeds, or design-tool handoff.
+description: Pick the right AISpaceFlow export format for editing, docs, collaboration, embeds, or design-tool handoff.
 ---
 
-OpenFlowKit supports both visual exports and editable handoff formats. The right format depends on what happens next.
+AISpaceFlow supports both visual exports and editable handoff formats. The right format depends on what happens next.
 
 ## Quick guide
 
@@ -21,7 +21,7 @@ OpenFlowKit supports both visual exports and editable handoff formats. The right
 ## Rules of thumb
 
 - Use JSON when fidelity matters most.
-- Use OpenFlow DSL when OpenFlowKit remains the editing home.
+- Use OpenFlow DSL when AISpaceFlow remains the editing home.
 - Use Mermaid when another docs or repo workflow expects Mermaid.
 - Use SVG when you need scalable vector output.
 - Use PNG or JPG for lightweight visual sharing.

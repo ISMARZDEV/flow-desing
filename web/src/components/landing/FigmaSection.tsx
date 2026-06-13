@@ -20,7 +20,7 @@ export function FigmaSection(): React.ReactElement {
                         </h2>
 
                         <p className="text-xl text-gray-600 leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0 font-medium">
-                            Copy a diagram from OpenFlowKit and paste it straight into Figma — you&apos;ll get editable text and clean vector shapes, not a flat image. No plugins needed.
+                            Copy a diagram from AISpaceFlow and paste it straight into Figma — you&apos;ll get editable text and clean vector shapes, not a flat image. No plugins needed.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

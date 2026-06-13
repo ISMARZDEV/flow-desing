@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Properties Panel
-description: OpenFlowKit’te düğüm, kenar, toplu düzenleme ve Studio ile ilişkili ayarlar için sağ taraftaki denetçiyi kullanın.
+description: AISpaceFlow’te düğüm, kenar, toplu düzenleme ve Studio ile ilişkili ayarlar için sağ taraftaki denetçiyi kullanın.
 ---
 
 Properties Panel, bir düğüm veya kenar seçtiğinizde açılan sağ taraf denetçisidir. Kabaca doğru olan yapıyı kesin düzeye taşıyan ana yüzeydir.

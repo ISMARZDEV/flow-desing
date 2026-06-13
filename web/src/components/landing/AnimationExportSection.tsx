@@ -76,7 +76,7 @@ export function AnimationExportSection(): React.ReactElement {
                                 <div className="w-3 h-3 rounded-full bg-yellow-500/80 hover:bg-yellow-500 transition-colors"></div>
                                 <div className="w-3 h-3 rounded-full bg-green-500/80 hover:bg-green-500 transition-colors"></div>
                             </div>
-                            <div className="text-xs font-mono text-white/30 tracking-widest hidden sm:block">OpenFlowKit Cinematic Engine</div>
+                            <div className="text-xs font-mono text-white/30 tracking-widest hidden sm:block">AISpaceFlow Cinematic Engine</div>
                             <div className="flex items-center gap-4">
                                 <div className="text-[10px] font-bold text-white/40 uppercase tracking-widest">1080p</div>
                                 <button className="bg-brand-primary text-white text-[10px] sm:text-xs uppercase font-bold tracking-wider px-4 py-1.5 rounded-full hover:bg-orange-600 transition-colors shadow-[0_0_20px_rgba(233,84,32,0.4)] flex items-center gap-2">

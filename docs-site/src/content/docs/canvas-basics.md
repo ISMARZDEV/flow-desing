@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Canvas Basics
-description: Learn how to move, select, edit, and recover work on the OpenFlowKit canvas.
+description: Learn how to move, select, edit, and recover work on the AISpaceFlow canvas.
 ---
 
-The canvas is the main editing surface in OpenFlowKit. It is optimized for desktop and larger-tablet workflows, with direct manipulation on the graph and exact edits in the side rails.
+The canvas is the main editing surface in AISpaceFlow. It is optimized for desktop and larger-tablet workflows, with direct manipulation on the graph and exact edits in the side rails.
 
 ## When to use the canvas
 

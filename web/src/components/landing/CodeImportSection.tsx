@@ -107,7 +107,7 @@ export function CodeImportSection(): React.ReactElement {
                             </h2>
 
                             <p className="text-lg text-brand-secondary leading-relaxed font-medium">
-                                Don&apos;t draw boxes manually. Paste JSON, React components, Prisma schemas, or SQL dumps into OpenFlowKit. Our AI engine parses the relationships and builds a living canvas instantly.
+                                Don&apos;t draw boxes manually. Paste JSON, React components, Prisma schemas, or SQL dumps into AISpaceFlow. Our AI engine parses the relationships and builds a living canvas instantly.
                             </p>
                         </div>
 

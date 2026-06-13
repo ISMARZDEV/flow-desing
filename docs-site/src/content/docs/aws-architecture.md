@@ -1,10 +1,10 @@
 ---
 draft: false
 title: AWS Architecture Diagram
-description: Use OpenFlowKit for AWS architecture diagrams with templates, icon-backed assets, AI drafting, DSL, and export workflows.
+description: Use AISpaceFlow for AWS architecture diagrams with templates, icon-backed assets, AI drafting, DSL, and export workflows.
 ---
 
-OpenFlowKit is a strong fit for AWS architecture diagrams because it supports provider-backed icon insertion, architecture-oriented layouts, AI-assisted drafting, and code-backed editing in the same workflow.
+AISpaceFlow is a strong fit for AWS architecture diagrams because it supports provider-backed icon insertion, architecture-oriented layouts, AI-assisted drafting, and code-backed editing in the same workflow.
 
 ## Best starting points
 

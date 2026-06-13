@@ -40,7 +40,16 @@ const VALID_NODE_TYPES = new Set([
 const NODE_TYPE_PATTERN = /^\s*\[([a-zA-Z_][a-zA-Z0-9_]*)\]\s+([a-zA-Z_][a-zA-Z0-9_]*)(?::|\s|$)/;
 const SIMPLE_NODE_PATTERN = /^\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*$/;
 const SHORT_NODE_PATTERN = /^\s*([a-zA-Z_][a-zA-Z0-9_]*):/;
-const EDGE_PATTERN = /^([a-zA-Z_][a-zA-Z0-9_]*)\s*(==>|-->|->|\.\.|---)\s*(?:\|([^|]*)\|\s*)?([a-zA-Z_][a-zA-Z0-9_]*)$/;
+// Edge arrows MUST match the authoritative parser (flowmindDSLParserV2.ts):
+//   ->  default | -->  curved | ..>  dashed | ==>  thick
+// Note: the dotted arrow is `..>` (with the trailing `>`), NOT `..`.
+const EDGE_PATTERN = /^([a-zA-Z_][a-zA-Z0-9_]*)\s*(==>|-->|\.\.>|->)\s*(?:\|([^|]*)\|\s*)?([a-zA-Z_][a-zA-Z0-9_]*)$/;
+const EDGE_ARROW_PROBE = /(?:==>|-->|\.\.>|->)/;
+// Valid group/container header: `group "Label" {`  (quotes required, NO id).
+const GROUP_START_PATTERN = /^group\s+"[^"]+"\s*\{$/;
+const GROUP_KEYWORD_PATTERN = /^group\b/;
+// A legacy/dotted arrow without the trailing `>` is a common mistake.
+const STALE_DOTTED_EDGE = /^[a-zA-Z_][a-zA-Z0-9_]*\s*\.\.(?!>)/;
 
 function isLikelyNodeDeclarationLine(line: string): boolean {
   const trimmed = line.trim();
@@ -50,7 +59,9 @@ function isLikelyNodeDeclarationLine(line: string): boolean {
 }
 
 function isLikelyEdgeLine(line: string): boolean {
-  return /(?:==>|-->|->|\.\.|---)/.test(line) && !/^\s*\[/.test(line);
+  const trimmed = line.trim();
+  if (/^\s*\[/.test(trimmed) || GROUP_KEYWORD_PATTERN.test(trimmed)) return false;
+  return EDGE_ARROW_PROBE.test(trimmed) || STALE_DOTTED_EDGE.test(trimmed);
 }
 
 export function lintOpenFlowDsl(source: string): DslLintResult {
@@ -60,6 +71,7 @@ export function lintOpenFlowDsl(source: string): DslLintResult {
   const outgoingEdges = new Map<string, Array<{ label?: string; line: number }>>();
   const lines = source.split('\n');
   let edgeCount = 0;
+  let groupDepth = 0;
 
   const hasHeader = /^\s*flow\s*:/m.test(source);
   if (!hasHeader) {
@@ -84,6 +96,38 @@ export function lintOpenFlowDsl(source: string): DslLintResult {
           line: lineNumber,
           snippet: trimmed,
           hint: 'Use `direction: TB` or `direction: LR`.',
+        });
+      }
+      return;
+    }
+
+    // Group / container blocks: `group "Label" {` ... `}` (nestable).
+    if (trimmed === '}') {
+      if (groupDepth > 0) {
+        groupDepth -= 1;
+      } else {
+        diagnostics.push({
+          severity: 'error',
+          message: 'Unexpected "}" with no open group.',
+          line: lineNumber,
+          snippet: trimmed,
+          hint: 'Remove the extra "}" or open a group with `group "Label" {`.',
+        });
+      }
+      return;
+    }
+    if (GROUP_KEYWORD_PATTERN.test(trimmed)) {
+      if (GROUP_START_PATTERN.test(trimmed)) {
+        groupDepth += 1;
+      } else {
+        diagnostics.push({
+          severity: 'error',
+          message: 'Malformed group header.',
+          line: lineNumber,
+          snippet: trimmed,
+          hint:
+            'Use `group "Label" { ` — quotes are required and there is NO id ' +
+            'before the label (e.g. `group rg "..." {` is invalid).',
         });
       }
       return;
@@ -130,6 +174,14 @@ export function lintOpenFlowDsl(source: string): DslLintResult {
     }
   });
 
+  if (groupDepth > 0) {
+    diagnostics.push({
+      severity: 'error',
+      message: `Unclosed group block (${groupDepth} missing "}").`,
+      hint: 'Every `group "Label" {` needs a matching `}` on its own line.',
+    });
+  }
+
   // Second pass for edges — we need declared nodes set complete.
   lines.forEach((line, index) => {
     const lineNumber = index + 1;
@@ -139,12 +191,17 @@ export function lintOpenFlowDsl(source: string): DslLintResult {
 
     const match = trimmed.match(EDGE_PATTERN);
     if (!match) {
+      const usesStaleDotted = STALE_DOTTED_EDGE.test(trimmed);
       diagnostics.push({
-        severity: 'warning',
-        message: 'Edge line did not match expected pattern.',
+        severity: usesStaleDotted ? 'error' : 'warning',
+        message: usesStaleDotted
+          ? 'Dotted edge must use `..>` (with the trailing ">"), not `..`.'
+          : 'Edge line did not match expected pattern.',
         line: lineNumber,
         snippet: trimmed,
-        hint: 'Use `source -> target` or `source ->|label| target`.',
+        hint: usesStaleDotted
+          ? 'Write `source ..>|label| target`. Valid arrows: -> --> ..> ==>'
+          : 'Use `source -> target` or `source ->|label| target` (arrows: -> --> ..> ==>).',
       });
       return;
     }

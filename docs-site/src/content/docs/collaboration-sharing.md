@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Collaboration & Sharing
-description: Share room links, understand local-only fallback behavior, and use OpenFlowKit collaboration features safely.
+description: Share room links, understand local-only fallback behavior, and use AISpaceFlow collaboration features safely.
 ---
 
-OpenFlowKit supports share links and collaboration-oriented room flows while keeping local-first behavior as the default.
+AISpaceFlow supports share links and collaboration-oriented room flows while keeping local-first behavior as the default.
 
 ## What the share flow includes
 

@@ -1,14 +1,14 @@
 ---
 draft: false
 title: V1 Beta Launch
-description: Historical release note for the OpenFlowKit V1 beta milestone and the product direction it introduced.
+description: Historical release note for the AISpaceFlow V1 beta milestone and the product direction it introduced.
 ---
 
 This page records the original V1 beta milestone as a product-history note rather than a current feature promise.
 
 ## What the V1 beta represented
 
-The V1 beta marked the point where OpenFlowKit stopped being treated as a basic flowchart tool and became a broader local-first diagramming workspace.
+The V1 beta marked the point where AISpaceFlow stopped being treated as a basic flowchart tool and became a broader local-first diagramming workspace.
 
 That milestone brought the product direction into focus:
 

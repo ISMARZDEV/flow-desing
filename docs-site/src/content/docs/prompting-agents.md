@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Prompting AI Agents
-description: Write better prompts for coding assistants and AI systems when you want diagram output for OpenFlowKit.
+description: Write better prompts for coding assistants and AI systems when you want diagram output for AISpaceFlow.
 ---
 
 If you use Cursor, Copilot, ChatGPT, Claude, or any other coding agent to help author diagrams, the prompt quality matters more than the model brand.
@@ -30,7 +30,7 @@ Include all of the following:
 ## Example prompt for OpenFlow DSL
 
 ```text
-Generate OpenFlow DSL for OpenFlowKit.
+Generate OpenFlow DSL for AISpaceFlow.
 Make a left-to-right payment recovery workflow.
 Include invoice due, charge attempt, success decision,
 retry sequence, manual review, customer notification,
@@ -72,12 +72,12 @@ When prompting an AI agent, just include a reference to this file.
 ### Example Prompt for Cursor IDE
 Open your Composer or Chat window and type:
 
-> `"Read https://openflowkit.com/llms.txt and then generate an architecture diagram showing our Next.js frontend connecting to a Supabase backend."`
+> `"Read https://aispaceflow.com/llms.txt and then generate an architecture diagram showing our Next.js frontend connecting to a Supabase backend."`
 
 ### Example Prompt for ChatGPT
 If you are using ChatGPT with web-browsing enabled:
 
-> `"Go to https://openflowkit.com/llms.txt to learn the OpenFlowKit syntax. Then, write a flowchart detailing an OAuth2 login sequence. Output the result using the \`\`\`openflow code block."`
+> `"Go to https://aispaceflow.com/llms.txt to learn the AISpaceFlow syntax. Then, write a flowchart detailing an OAuth2 login sequence. Output the result using the \`\`\`openflow code block."`
 
 ## Best Practices for Prompting
 

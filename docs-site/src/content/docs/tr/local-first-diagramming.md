@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Local-First Diagramming
-description: OpenFlowKit’te local-first yaklaşımının günlük çalışma, gizlilik ve paylaşım akışlarına etkisini öğrenin.
+description: AISpaceFlow’te local-first yaklaşımının günlük çalışma, gizlilik ve paylaşım akışlarına etkisini öğrenin.
 ---
 
-Local-first, çalışmanın zorunlu olarak merkezi bir sunucuda başlamaması demektir. OpenFlowKit bağlamında bu; verinin varsayılan olarak tarayıcıda kalması ve paylaşımın bilinçli bir adım olması anlamına gelir.
+Local-first, çalışmanın zorunlu olarak merkezi bir sunucuda başlamaması demektir. AISpaceFlow bağlamında bu; verinin varsayılan olarak tarayıcıda kalması ve paylaşımın bilinçli bir adım olması anlamına gelir.
 
 ## Pratik etkileri
 

@@ -22,7 +22,7 @@ export function ArchitectureExploded(): React.ReactElement {
                         <span className="font-serif italic font-normal text-white/50">A 4-Layer Engine.</span>
                     </h2>
                     <p className="text-base lg:text-sm xl:text-lg text-white/50 leading-relaxed font-medium mb-8 lg:mb-10 max-w-sm lg:max-w-xs xl:max-w-md">
-                        By aggressively decoupling state, layout, and rendering, OpenFlowKit delivers native performance without the bloat.
+                        By aggressively decoupling state, layout, and rendering, AISpaceFlow delivers native performance without the bloat.
                     </p>
 
                     <div className="flex flex-col gap-4 lg:gap-4 xl:gap-6">
@@ -144,7 +144,7 @@ export function ArchitectureExploded(): React.ReactElement {
 
                         {/* Layer 3: Headless Core */}
                         <div className="layer-3 bg-[#0d1117]/80 border-2 border-green-500/50 flex flex-col p-6 overflow-hidden z-20">
-                            <div className="text-[10px] font-mono text-green-400 font-bold uppercase tracking-widest border-b border-green-500/30 pb-3 mb-3">@openflowkit/core</div>
+                            <div className="text-[10px] font-mono text-green-400 font-bold uppercase tracking-widest border-b border-green-500/30 pb-3 mb-3">@aispaceflow/core</div>
                             <div className="flex-1 font-mono text-[8.5px] text-green-500/80 space-y-1.5 leading-relaxed">
                                 <div><span className="text-purple-400">class</span> Engine {'{'}</div>
                                 <div className="pl-3"><span className="text-blue-400">validate</span>(nodes: <span className="text-yellow-600">Node</span>[]): <span className="text-blue-400">boolean</span> {'{'}</div>

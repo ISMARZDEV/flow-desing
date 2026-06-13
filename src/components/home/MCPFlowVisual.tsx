@@ -20,7 +20,7 @@ const TOOLS: ToolNode[] = [
 ];
 
 /**
- * Animated schematic of the MCP exchange: an AI client talks to the OpenFlowKit
+ * Animated schematic of the MCP exchange: an AI client talks to the AISpaceFlow
  * core over stdio, which fans out to local diagramming tools. Motion is gated on
  * prefers-reduced-motion; the static frame still reads as a complete topology.
  */
@@ -47,7 +47,7 @@ export function MCPFlowVisual(): React.ReactElement {
                 role="img"
                 aria-label={t(
                     'mcp.visualAlt',
-                    'Your AI client connects to the OpenFlowKit MCP server over stdio, which provides local diagramming tools.'
+                    'Your AI client connects to the AISpaceFlow MCP server over stdio, which provides local diagramming tools.'
                 )}
             >
                 {/* connection wires (static spine) */}
@@ -86,19 +86,19 @@ export function MCPFlowVisual(): React.ReactElement {
                 {/* stdio label */}
                 <text x="288" y="140" className="mcpflow-wire-label">stdio</text>
 
-                {/* OpenFlowKit core */}
+                {/* AISpaceFlow core */}
                 <g className="mcpflow-core">
                     <circle cx={CORE.x} cy={CORE.y} r={CORE.r + 8} className="mcpflow-core-halo" />
                     <circle cx={CORE.x} cy={CORE.y} r={CORE.r} className="mcpflow-core-ring" />
                     <image
-                        href="/favicon.svg"
+                        href="/logos/fav-icon.png"
                         x={CORE.x - 26}
                         y={CORE.y - 26}
                         width="52"
                         height="52"
                         preserveAspectRatio="xMidYMid meet"
                     />
-                    <text x={CORE.x} y={CORE.y + CORE.r + 22} className="mcpflow-core-label">OpenFlowKit</text>
+                    <text x={CORE.x} y={CORE.y + CORE.r + 22} className="mcpflow-core-label">AISpaceFlow</text>
                 </g>
 
                 {/* tools */}

@@ -19,27 +19,33 @@ direction: TB | LR       # default TB
 [mobile]       app:    Mobile App
 [note]         n:      Latency 200ms
 
-# Edges
+# Edges  (label goes in pipes after the arrow: src ARROW|label| target)
 s1 -> step1                 # default
-step1 ==> api               # primary path
-api  --> db                 # secondary
-api  ..|error| n            # async / dotted
+step1 ==> api               # primary path (thick)
+api  --> db                 # secondary (curved)
+api  ..>|error| n           # async / dotted  (NOTE the '>' : it is '..>' not '..')
 branch ->|Yes| step1
 branch ->|No|  e1
+
+# Groups / containers (render as labeled frames; nestable)
+# Quotes are REQUIRED and there is NO id before the label. Close with '}'.
+group "Edge layer" {
+  [architecture] apim: API Management { archProvider: "azure", archResourceType: "web-api-management-services" }
+}
 
 # Architecture icons
 # Use the [architecture] node type with archProvider + archResourceType attributes
 # to render a real provider icon (AWS, Azure, GCP, CNCF, or developer brand logos).
 # Always call the find_icon tool to discover the correct slug; do not guess.
 # Providers: aws, azure, gcp, cncf, developer
-# Catalog resource: openflowkit://icons (full) or openflowkit://icons/{provider} (per pack)
+# Catalog resource: aispaceflow://icons (full) or aispaceflow://icons/{provider} (per pack)
 `;
 
 export function registerResources(server: McpServer): void {
   // Static cheatsheet — agents read it once to learn DSL surface.
   server.registerResource(
     'dsl-cheatsheet',
-    'openflowkit://docs/dsl-cheatsheet',
+    'aispaceflow://docs/dsl-cheatsheet',
     {
       title: 'OpenFlow DSL Cheatsheet',
       description: 'Quick reference for OpenFlow DSL node types, attributes, and edge styles.',
@@ -59,7 +65,7 @@ export function registerResources(server: McpServer): void {
   // Templates exposed both as a catalog and via per-name URI template.
   server.registerResource(
     'templates-catalog',
-    'openflowkit://templates',
+    'aispaceflow://templates',
     {
       title: 'Starter template catalog',
       description: 'JSON list of all available starter templates (name, title, category, summary).',
@@ -89,7 +95,7 @@ export function registerResources(server: McpServer): void {
   // find_icon tool for targeted queries.
   server.registerResource(
     'icons-catalog',
-    'openflowkit://icons',
+    'aispaceflow://icons',
     {
       title: 'Provider icon catalog',
       description:
@@ -110,12 +116,12 @@ export function registerResources(server: McpServer): void {
 
   server.registerResource(
     'icons-by-provider',
-    new ResourceTemplate('openflowkit://icons/{provider}', {
+    new ResourceTemplate('aispaceflow://icons/{provider}', {
       list: async () => {
         const providers = await getIconProviders();
         return {
           resources: providers.map((provider) => ({
-            uri: `openflowkit://icons/${provider}`,
+            uri: `aispaceflow://icons/${provider}`,
             name: `icons-${provider}`,
             title: `${provider} icons`,
             description: `Icon catalog for the ${provider} provider pack.`,
@@ -152,10 +158,10 @@ export function registerResources(server: McpServer): void {
 
   server.registerResource(
     'template',
-    new ResourceTemplate('openflowkit://templates/{name}', {
+    new ResourceTemplate('aispaceflow://templates/{name}', {
       list: async () => ({
         resources: STARTER_TEMPLATES.map((template) => ({
-          uri: `openflowkit://templates/${template.name}`,
+          uri: `aispaceflow://templates/${template.name}`,
           name: template.name,
           title: template.title,
           description: template.summary,

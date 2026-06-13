@@ -114,7 +114,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* Main Content */}
       <main
         id="main-content"
-        className="flex-1 flex min-w-0 flex-col bg-[var(--brand-surface)] md:ml-64"
+        className="flex-1 flex min-w-0 flex-col bg-[var(--brand-background)] md:ml-64"
       >
         {activeTab === 'home' && (
           <HomeDashboard

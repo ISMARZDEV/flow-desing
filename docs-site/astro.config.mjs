@@ -3,18 +3,18 @@ import starlight from '@astrojs/starlight';
 import { toStarlightSidebar } from '../src/docs/publicDocsCatalog.js';
 
 export default defineConfig({
-  site: 'https://docs.openflowkit.com',
+  site: 'https://docs.aispaceflow.com',
   legacy: {
     collections: true,
   },
   integrations: [
     starlight({
-      title: 'OpenFlowKit Docs',
-      description: 'Documentation for OpenFlowKit — the local-first, AI-powered diagramming tool.',
+      title: 'AISpaceFlow Docs',
+      description: 'Documentation for AISpaceFlow — the local-first, AI-powered diagramming tool.',
       favicon: '/favicon.svg',
       logo: {
-        src: './src/assets/Logo_openflowkit.svg',
-        alt: 'OpenFlowKit',
+        src: './src/assets/Logo_aispaceflow.svg',
+        alt: 'AISpaceFlow',
       },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/ISMARZDEV/flow-desing' },
@@ -60,7 +60,7 @@ export default defineConfig({
                 return;
               }
 
-              if (href.includes('app.openflowkit.com')) {
+              if (href.includes('app.aispaceflow.com')) {
                 analytics.capture('docs_open_app_clicked', { href, target: 'app', placement });
                 return;
               }

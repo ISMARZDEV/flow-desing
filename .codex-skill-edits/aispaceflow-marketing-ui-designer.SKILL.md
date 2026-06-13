@@ -1,11 +1,11 @@
 ---
-name: openflowkit-marketing-ui-designer
-description: Design OpenFlowKit marketing pages and content surfaces with strong hierarchy, positioning, and conversion clarity. Use for landing-page redesigns, section architecture, feature storytelling, page-level visual systems, and marketing UX decisions in `web/`.
+name: aispaceflow-marketing-ui-designer
+description: Design AISpaceFlow marketing pages and content surfaces with strong hierarchy, positioning, and conversion clarity. Use for landing-page redesigns, section architecture, feature storytelling, page-level visual systems, and marketing UX decisions in `web/`.
 ---
 
-# OpenFlowKit Marketing UI Designer
+# AISpaceFlow Marketing UI Designer
 
-Design marketing experiences that make OpenFlowKit feel like a serious category-defining product, not a generic SaaS site.
+Design marketing experiences that make AISpaceFlow feel like a serious category-defining product, not a generic SaaS site.
 
 ## Scope
 
@@ -22,7 +22,7 @@ Do not use for:
 
 ## Design System Guardrails
 
-Stay inside the existing OpenFlowKit visual system unless the user explicitly asks for a reset.
+Stay inside the existing AISpaceFlow visual system unless the user explicitly asks for a reset.
 
 Before proposing or implementing design work, inspect the relevant local sources first:
 - `/Users/varun/Desktop/Dev_projects/flowmind-ai/STRATEGY.md`
@@ -50,7 +50,7 @@ If a page already has established components, extend them. If a pattern exists t
 Every page must answer:
 - Who is this page for?
 - What job are they trying to get done?
-- Why is OpenFlowKit structurally better than alternatives?
+- Why is AISpaceFlow structurally better than alternatives?
 - What should they do next?
 - Which existing comps, components, tokens, and page patterns is this page inheriting from?
 
@@ -60,7 +60,7 @@ Every page must answer:
 2. Audit the existing comps, `web/` components, landing components, and design-system files before creating anything new.
 3. Tie page structure to product truth from `STRATEGY.md`, docs, and shipped features.
 4. Make one strong page idea. Avoid kitchen-sink landing sections.
-5. Use bold hierarchy, precise copy surfaces, and clear contrast between problem, product, and proof, while preserving the established OpenFlowKit aesthetic.
+5. Use bold hierarchy, precise copy surfaces, and clear contrast between problem, product, and proof, while preserving the established AISpaceFlow aesthetic.
 6. Design for desktop and mobile at the same time.
 7. Prefer a system that can extend across many pages, not a one-off hero treatment.
 8. Reuse or adapt existing sections before inventing new component families.
@@ -68,12 +68,12 @@ Every page must answer:
 ## Non-Negotiables
 
 - Do not introduce a new design language when the repo already has one.
-- Do not substitute generic SaaS gradients, type stacks, card systems, or interactions for the existing OpenFlowKit look.
+- Do not substitute generic SaaS gradients, type stacks, card systems, or interactions for the existing AISpaceFlow look.
 - Do not ignore user comps in favor of a cleaner or trendier composition.
 - Do not add new tokens or components without checking whether the same role already exists locally.
 - When you do add something new, explain why the current system could not cover it and how the addition stays visually native.
 
-## OpenFlowKit Positioning Anchors
+## AISpaceFlow Positioning Anchors
 
 Lean on real advantages:
 - local-first

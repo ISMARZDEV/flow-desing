@@ -1,17 +1,17 @@
 ---
 draft: false
 title: Embed Diagrams in GitHub
-description: Create viewer links for OpenFlowKit diagrams and embed them into GitHub-flavored documentation workflows.
+description: Create viewer links for AISpaceFlow diagrams and embed them into GitHub-flavored documentation workflows.
 ---
 
-OpenFlowKit diagrams can be embedded in any GitHub README or Markdown file as interactive, read-only views. No server setup or GitHub App required.
+AISpaceFlow diagrams can be embedded in any GitHub README or Markdown file as interactive, read-only views. No server setup or GitHub App required.
 
 ## How it works
 
 The `/view` route renders any OpenFlow DSL passed as a URL parameter. You encode your diagram as a URL-safe string and link to it from your README.
 
 ```
-https://app.openflowkit.com/#/view?flow=~COMPRESSED_DSL
+https://app.aispaceflow.com/#/view?flow=~COMPRESSED_DSL
 ```
 
 When someone clicks the link, they see the fully rendered, interactive diagram and can pan, zoom, and click **Open in Editor** to load it into the canvas for editing.
@@ -42,16 +42,16 @@ api -> db |SQL|
 
 ### 2. Create a viewer URL
 
-The easiest path is to use the OpenFlowKit MCP server's `create_viewer_url` tool or the editor's **Share / Embed** action. Both create a compressed, URL-safe viewer link that opens on the app domain:
+The easiest path is to use the AISpaceFlow MCP server's `create_viewer_url` tool or the editor's **Share / Embed** action. Both create a compressed, URL-safe viewer link that opens on the app domain:
 
 ```text
-https://app.openflowkit.com/#/view?flow=~...
+https://app.aispaceflow.com/#/view?flow=~...
 ```
 
 ### 3. Embed in your README
 
 ```markdown
-[![Architecture Diagram](https://openflowkit.com/og-diagram.png)](https://app.openflowkit.com/#/view?flow=PASTE_ENCODED_VALUE_HERE)
+[![Architecture Diagram](https://aispaceflow.com/og-diagram.png)](https://app.aispaceflow.com/#/view?flow=PASTE_ENCODED_VALUE_HERE)
 ```
 
 The outer image link makes GitHub show a clickable preview image. Replace `og-diagram.png` with a screenshot of your diagram for the best preview.
@@ -59,7 +59,7 @@ The outer image link makes GitHub show a clickable preview image. Replace `og-di
 Or link directly without an image:
 
 ```markdown
-[View Architecture Diagram →](https://app.openflowkit.com/#/view?flow=PASTE_ENCODED_VALUE_HERE)
+[View Architecture Diagram →](https://app.aispaceflow.com/#/view?flow=PASTE_ENCODED_VALUE_HERE)
 ```
 
 ## Updating diagrams
@@ -70,12 +70,12 @@ For diagrams you want to iterate on frequently, store the raw DSL in a `.flow` f
 
 ```markdown
 <!-- Source: ./docs/architecture.flow -->
-[View Architecture →](https://app.openflowkit.com/#/view?flow=...)
+[View Architecture →](https://app.aispaceflow.com/#/view?flow=...)
 ```
 
 ## Encoding helper
 
-You can also export the viewer URL directly from the OpenFlowKit editor:
+You can also export the viewer URL directly from the AISpaceFlow editor:
 
 1. Open your diagram in the editor
 2. Open **Studio → Code → OpenFlow DSL**

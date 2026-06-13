@@ -8,7 +8,7 @@ The structured import flows in Studio convert source text into editable diagrams
 
 ## How it works
 
-Paste your source text, choose the matching mode, and generate the diagram. Depending on the input type, OpenFlowKit either runs a specialized AI-assisted import or a deterministic parser-based flow.
+Paste your source text, choose the matching mode, and generate the diagram. Depending on the input type, AISpaceFlow either runs a specialized AI-assisted import or a deterministic parser-based flow.
 
 One common pipeline is:
 

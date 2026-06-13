@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Settings & Preferences
-description: Configure OpenFlowKit to match your workflow — AI providers, canvas behavior, and keyboard shortcuts.
+description: Configure AISpaceFlow to match your workflow — AI providers, canvas behavior, and keyboard shortcuts.
 ---
 
-OpenFlowKit offers customizable settings across three areas: Canvas preferences, AI configuration, and Keyboard shortcuts.
+AISpaceFlow offers customizable settings across three areas: Canvas preferences, AI configuration, and Keyboard shortcuts.
 
 ## Accessing Settings
 
@@ -38,7 +38,7 @@ The AI tab configures how Flowpilot generates diagrams:
 2. **Enter API Key**: Paste your API key for the selected provider
 3. **Key Persistence**: Choose whether the key persists across browser sessions or is cleared when the tab closes
 
-If you don't have an API key, visit the provider's website to create one. OpenFlowKit does not require any server-side configuration — all AI requests go directly from your browser to the provider.
+If you don't have an API key, visit the provider's website to create one. AISpaceFlow does not require any server-side configuration — all AI requests go directly from your browser to the provider.
 
 ### Troubleshooting
 

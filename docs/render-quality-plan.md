@@ -10,7 +10,7 @@
 
 After auditing both pipelines:
 
-| Dimension | Mermaid | OpenFlowKit (today) | Gap |
+| Dimension | Mermaid | AISpaceFlow (today) | Gap |
 |---|---|---|---|
 | Layout engine | dagre or ELK (v11 pluggable) | ELK only | none |
 | ELK edge routing | `ORTHOGONAL` | `ORTHOGONAL` | none |

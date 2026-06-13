@@ -183,6 +183,7 @@ export function parseOpenFlowDslV2(input: string): DSLResult {
 
   const lines = input.split('\n');
   const currentGroupStack: string[] = [];
+  let groupCounter = 0;
 
   // First pass: symbols and structure
   // We need map label -> ID for implicit IDs
@@ -210,9 +211,25 @@ export function parseOpenFlowDslV2(input: string): DSLResult {
     }
 
     // 2. Groups Start: group "Label" {
+    // Create a real container node (type 'section') so the group renders as a
+    // frame and its children nest inside it via parentId. Nested groups chain.
     const groupStartMatch = line.match(/^group\s+"?([^"{]+)"?\s*\{$/);
     if (groupStartMatch) {
-      currentGroupStack.push(groupStartMatch[1]);
+      const groupLabel = groupStartMatch[1].trim();
+      const groupId = `group_${++groupCounter}`;
+      const groupParentId =
+        currentGroupStack.length > 0
+          ? currentGroupStack[currentGroupStack.length - 1]
+          : undefined;
+      dslNodes.push({
+        id: groupId,
+        type: 'section',
+        label: groupLabel,
+        attributes: {},
+        ...(groupParentId ? { parentId: groupParentId } : {}),
+      });
+      labelToIdMap.set(groupId, groupId);
+      currentGroupStack.push(groupId);
       return;
     }
 
@@ -284,11 +301,17 @@ export function parseOpenFlowDslV2(input: string): DSLResult {
 
       const attributes = parseAttributes(attrsRaw || '');
 
+      const nodeParentId =
+        currentGroupStack.length > 0
+          ? currentGroupStack[currentGroupStack.length - 1]
+          : undefined;
+
       const node: DSLNode = {
         id,
         type,
         label,
         attributes,
+        ...(nodeParentId ? { parentId: nodeParentId } : {}),
       };
 
       dslNodes.push(node);

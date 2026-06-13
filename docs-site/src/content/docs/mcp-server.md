@@ -1,26 +1,26 @@
 ---
 draft: false
 title: MCP Server
-description: Use the OpenFlowKit MCP server with Claude Desktop, Cursor, Windsurf, and other MCP clients.
+description: Use the AISpaceFlow MCP server with Claude Desktop, Cursor, Windsurf, and other MCP clients.
 ---
 
-The OpenFlowKit MCP server gives AI clients diagramming skills that run local-first — on your machine, no API key, no cloud round-trip, deterministic output. Claude Desktop, Cursor, Windsurf, and other MCP clients already have an LLM; OpenFlowKit supplies the local tools that make that model good at diagrams.
+The AISpaceFlow MCP server gives AI clients diagramming skills that run local-first — on your machine, no API key, no cloud round-trip, deterministic output. Claude Desktop, Cursor, Windsurf, and other MCP clients already have an LLM; AISpaceFlow supplies the local tools that make that model good at diagrams.
 
-The package is `@ismarzdev/openflowkit-mcp`. It runs locally over the standard MCP stdio transport.
+The package is `@ismarzdev/aispaceflow-mcp`. It runs locally over the standard MCP stdio transport.
 
 ## Install and run
 
 Use it directly with `npx`:
 
 ```bash
-npx -y @ismarzdev/openflowkit-mcp
+npx -y @ismarzdev/aispaceflow-mcp
 ```
 
 Or install it globally:
 
 ```bash
-npm install -g @ismarzdev/openflowkit-mcp
-openflowkit-mcp
+npm install -g @ismarzdev/aispaceflow-mcp
+aispaceflow-mcp
 ```
 
 The server requires Node 18 or newer.
@@ -32,9 +32,9 @@ Add the server to your Claude Desktop config:
 ```json
 {
   "mcpServers": {
-    "openflowkit": {
+    "aispaceflow": {
       "command": "npx",
-      "args": ["-y", "@ismarzdev/openflowkit-mcp"]
+      "args": ["-y", "@ismarzdev/aispaceflow-mcp"]
     }
   }
 }
@@ -44,9 +44,9 @@ For Cursor, Windsurf, and other MCP clients, use the same command and args in th
 
 ## How generation works
 
-OpenFlowKit MCP is agent-native:
+AISpaceFlow MCP is agent-native:
 
-1. The agent reads `openflowkit://docs/dsl-cheatsheet`.
+1. The agent reads `aispaceflow://docs/dsl-cheatsheet`.
 2. The agent writes OpenFlow DSL itself.
 3. The agent calls `find_icon` when it needs exact cloud or developer icon slugs.
 4. The agent calls `validate_openflow_dsl`.
@@ -63,7 +63,7 @@ The current server exposes 8 local-first tools (no API key, deterministic, run o
 | Tool | What it does |
 | --- | --- |
 | `validate_openflow_dsl` | Lint DSL with structured diagnostics |
-| `create_viewer_url` | Create a shareable OpenFlowKit viewer URL from DSL |
+| `create_viewer_url` | Create a shareable AISpaceFlow viewer URL from DSL |
 | `analyze_codebase` | Detect platforms, services, top-level structure, and language mix from a local repo |
 | `find_icon` | Search 1,600+ provider and developer icons for exact `archProvider` and `archResourceType` values |
 | `list_starter_templates` | Browse built-in templates |
@@ -77,11 +77,11 @@ The server exposes five resources:
 
 | URI | Description |
 | --- | --- |
-| `openflowkit://docs/dsl-cheatsheet` | OpenFlow DSL syntax reference |
-| `openflowkit://templates` | Starter template catalog |
-| `openflowkit://templates/{name}` | DSL for a named starter template |
-| `openflowkit://icons` | Full architecture icon catalog |
-| `openflowkit://icons/{provider}` | Icons for one provider pack (`aws`, `azure`, `gcp`, `cncf`, or `developer`) |
+| `aispaceflow://docs/dsl-cheatsheet` | OpenFlow DSL syntax reference |
+| `aispaceflow://templates` | Starter template catalog |
+| `aispaceflow://templates/{name}` | DSL for a named starter template |
+| `aispaceflow://icons` | Full architecture icon catalog |
+| `aispaceflow://icons/{provider}` | Icons for one provider pack (`aws`, `azure`, `gcp`, `cncf`, or `developer`) |
 
 Clients can also surface three prompt templates: `flowchart_from_description`, `convert_mermaid_to_openflow`, and `architecture_from_codebase`.
 
@@ -90,18 +90,18 @@ Clients can also surface three prompt templates: `flowchart_from_description`, `
 Paste this into a connected MCP client:
 
 ```text
-Using the openflowkit MCP server: read openflowkit://docs/dsl-cheatsheet, then write an OpenFlow DSL flowchart for a checkout flow (cart → shipping → promo-code decision → payment → Stripe webhook → confirm). Call validate_openflow_dsl on your output, fix any errors, then call create_viewer_url. Show me the final DSL and viewer URL.
+Using the aispaceflow MCP server: read aispaceflow://docs/dsl-cheatsheet, then write an OpenFlow DSL flowchart for a checkout flow (cart → shipping → promo-code decision → payment → Stripe webhook → confirm). Call validate_openflow_dsl on your output, fix any errors, then call create_viewer_url. Show me the final DSL and viewer URL.
 ```
 
 For codebases:
 
 ```text
-Using openflowkit: call analyze_codebase on /path/to/project, read openflowkit://docs/dsl-cheatsheet, use find_icon for exact architecture icons, write OpenFlow DSL, validate it, then create a viewer URL.
+Using aispaceflow: call analyze_codebase on /path/to/project, read aispaceflow://docs/dsl-cheatsheet, use find_icon for exact architecture icons, write OpenFlow DSL, validate it, then create a viewer URL.
 ```
 
 ## Privacy model
 
-The server does not store diagrams, require an OpenFlowKit account, ask for provider keys, or phone home. Local tools run on your machine. Codebase analysis only reads the directory you explicitly pass to `analyze_codebase`.
+The server does not store diagrams, require an AISpaceFlow account, ask for provider keys, or phone home. Local tools run on your machine. Codebase analysis only reads the directory you explicitly pass to `analyze_codebase`.
 
 ## Related pages
 

@@ -1,12 +1,12 @@
 ---
 draft: false
 title: Studio Overview
-description: Understand the OpenFlowKit Studio rail for AI, code, imports, infrastructure sync, and architecture linting.
+description: Understand the AISpaceFlow Studio rail for AI, code, imports, infrastructure sync, and architecture linting.
 ---
 
 Studio is the right-side workspace for generation, code-backed editing, structured imports, infrastructure parsing, and rule-driven validation. Use it when the canvas alone is not the best tool for the job.
 
-Studio matters because OpenFlowKit is not only a drag-and-drop editor. The product is built around moving between visual editing and structured inputs. Studio is where those structured workflows live.
+Studio matters because AISpaceFlow is not only a drag-and-drop editor. The product is built around moving between visual editing and structured inputs. Studio is where those structured workflows live.
 
 ## Studio tabs in the current product path
 
@@ -62,7 +62,7 @@ The Infra tab exists for deterministic infrastructure parsing. It is the best op
 - Docker Compose YAML
 - other supported infra-oriented inputs
 
-Use this tab when you want a trustworthy structural import instead of a model-generated interpretation. The result still comes back as a regular editable OpenFlowKit diagram.
+Use this tab when you want a trustworthy structural import instead of a model-generated interpretation. The result still comes back as a regular editable AISpaceFlow diagram.
 
 ## Lint tab
 

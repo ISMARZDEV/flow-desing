@@ -128,7 +128,7 @@ export function TopNav({
                 <TopNavBrand
                     appName={APP_NAME}
                     logoUrl={null}
-                    logoStyle="text"
+                    logoStyle="icon"
                     ui={{ showBeta: true }}
                 />
             </div>

@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Design Systems & Branding
-description: Tutarlı diyagramlar için OpenFlowKit tasarım sistemlerini yönetin ve tema tanımlarını içe veya dışa aktarın.
+description: Tutarlı diyagramlar için AISpaceFlow tasarım sistemlerini yönetin ve tema tanımlarını içe veya dışa aktarın.
 ---
 
-OpenFlowKit, diyagramların tek tek elle stillenmesi yerine tekrar kullanılabilir bir görsel sistemle çalışmasını sağlayan tasarım sistemi desteğine sahiptir.
+AISpaceFlow, diyagramların tek tek elle stillenmesi yerine tekrar kullanılabilir bir görsel sistemle çalışmasını sağlayan tasarım sistemi desteğine sahiptir.
 
 ## Desteklenen akışlar
 

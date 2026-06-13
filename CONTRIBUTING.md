@@ -1,4 +1,4 @@
-# Contributing to OpenFlowKit
+# Contributing to AISpaceFlow
 
 First off, thanks for taking the time to contribute! ❤️
 
@@ -39,7 +39,7 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 ### Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for OpenFlowKit, **including completely new features and minor improvements to existing functionality**. Following these guidelines will help maintainers and the community to understand your suggestion and find related suggestions.
+This section guides you through submitting an enhancement suggestion for AISpaceFlow, **including completely new features and minor improvements to existing functionality**. Following these guidelines will help maintainers and the community to understand your suggestion and find related suggestions.
 
 ### Your First Code Contribution
 

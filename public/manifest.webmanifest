@@ -1,6 +1,6 @@
 {
-  "name": "OpenFlowKit",
-  "short_name": "OpenFlowKit",
+  "name": "AISpaceFlow",
+  "short_name": "AISpaceFlow",
   "description": "Local-first diagramming for developers and technical builders.",
   "start_url": "/index.html#/home",
   "display": "standalone",
@@ -8,16 +8,16 @@
   "theme_color": "#2563eb",
   "icons": [
     {
-      "src": "/Logo_openflowkit.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/logos/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "src": "/logos/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

@@ -1,15 +1,15 @@
-# OpenFlowKit - Diagram as Code Engine
+# AISpaceFlow - Diagram as Code Engine
 
-> OpenFlowKit is an open-source, local-first Diagram-as-Code engine built for modern workflows.
+> AISpaceFlow is an open-source, local-first Diagram-as-Code engine built for modern workflows.
 > It allows users to write simple text (DSL) and instantly get beautiful, presentation-ready diagrams.
 
 ## App Name & Branding
-- App Name: OpenFlowKit
-- Main Repository: https://github.com/Vrun-design/openflowkit
+- App Name: AISpaceFlow
+- Main Repository: https://github.com/Vrun-design/aispaceflow
 - Architecture: React (Vite), ReactFlow, Zustand, TailwindCSS
 
 ## OpenFlow DSL V2 Syntax Rules
-If a user asks you to "Generate a diagram" or "Draw a flowchart for OpenFlowKit", you MUST output the exact syntax described below. Do NOT use Mermaid syntax unless explicitly asked.
+If a user asks you to "Generate a diagram" or "Draw a flowchart for AISpaceFlow", you MUST output the exact syntax described below. Do NOT use Mermaid syntax unless explicitly asked.
 
 Wrap your output in standard markdown code blocks, but use `openflow` as the language trigger (e.g., `\`\`\`openflow`).
 

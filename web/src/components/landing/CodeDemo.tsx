@@ -114,7 +114,7 @@ export function CodeDemo(): React.ReactElement {
           <div className="flex-1 p-6 leading-7 text-gray-400 overflow-y-auto custom-scrollbar selection:bg-brand-blue/30 selection:text-white">
              <div className="flex group hover:bg-white/5 transition-colors -mx-6 px-6">
                  <span className="w-8 text-gray-700 select-none text-right mr-4 text-[11px] pt-0.5 font-medium">1</span>
-                 <div><span className="text-[#C678DD]">import</span> <span className="text-[#E5C07B]">{`{ Node, Edge }`}</span> <span className="text-[#C678DD]">from</span> <span className="text-[#98C379]">&quot;@openflowkit/core&quot;</span>;</div>
+                 <div><span className="text-[#C678DD]">import</span> <span className="text-[#E5C07B]">{`{ Node, Edge }`}</span> <span className="text-[#C678DD]">from</span> <span className="text-[#98C379]">&quot;@aispaceflow/core&quot;</span>;</div>
              </div>
              <div className="flex group hover:bg-white/5 transition-colors -mx-6 px-6">
                  <span className="w-8 text-gray-700 select-none text-right mr-4 text-[11px] pt-0.5 font-medium">2</span>

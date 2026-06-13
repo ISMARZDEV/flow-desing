@@ -4,7 +4,7 @@ title: AI Generation
 description: Flowpilot, BYOK sağlayıcılar, koddan mimari üretimi ve yapılandırılmış içe aktarma ile diyagram üretin ve geliştirin.
 ---
 
-OpenFlowKit, Studio alanı üzerinden yapay zeka destekli diyagram üretimi sunar. Flowpilot özellikle ilk taslak, yapısal revizyon ve kod tabanlı mimari görünümü üretmek için güçlüdür.
+AISpaceFlow, Studio alanı üzerinden yapay zeka destekli diyagram üretimi sunar. Flowpilot özellikle ilk taslak, yapısal revizyon ve kod tabanlı mimari görünümü üretmek için güçlüdür.
 
 ## Üründe AI nerede yer alır?
 

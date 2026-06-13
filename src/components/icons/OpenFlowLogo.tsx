@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LOGO_SRC = '/favicon.svg';
+const LOGO_SRC = '/logos/fav-icon.png';
 
 export const OpenFlowLogo: React.FC<{ className?: string }> = ({ className = '' }) => {
     return (

@@ -42,7 +42,7 @@ export interface ImportFidelityReport {
     };
 }
 
-const IMPORT_REPORT_STORAGE_KEY = 'openflowkit-import-report-latest';
+const IMPORT_REPORT_STORAGE_KEY = 'aispaceflow-import-report-latest';
 
 function isOfficialFlowchartReason(layoutFallbackReason?: string): boolean {
     return layoutFallbackReason?.toLowerCase().includes('official flowchart') ?? false;
@@ -172,7 +172,7 @@ export function getImportRecoveryGuidance(report: ImportFidelityReport): string 
         );
     }
 
-    return 'If this file came from another tool, try exporting a plain JSON/OpenFlowKit file again or remove unsupported metadata before retrying.';
+    return 'If this file came from another tool, try exporting a plain JSON/AISpaceFlow file again or remove unsupported metadata before retrying.';
 }
 
 function getMermaidReportLayoutDetail(report: ImportFidelityReport): string | null {

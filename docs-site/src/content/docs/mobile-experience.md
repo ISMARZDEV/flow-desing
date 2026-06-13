@@ -1,14 +1,14 @@
 ---
 draft: false
 title: Mobile Experience
-description: Using OpenFlowKit on tablets and phones — capabilities, limitations, and best practices.
+description: Using AISpaceFlow on tablets and phones — capabilities, limitations, and best practices.
 ---
 
-OpenFlowKit is designed primarily for desktop browsers, but it provides a functional experience on tablets and phones.
+AISpaceFlow is designed primarily for desktop browsers, but it provides a functional experience on tablets and phones.
 
 ## Supported Devices
 
-OpenFlowKit works on:
+AISpaceFlow works on:
 
 - **Tablets** (iPad, Android tablets): Full functionality with touch interactions
 - **Phones**: Basic viewing and editing with some limitations
@@ -57,7 +57,7 @@ OpenFlowKit works on:
 
 ## Recommended Workflows for Mobile
 
-1. **Review and present**: OpenFlowKit is great for viewing diagrams on mobile during meetings or code reviews
+1. **Review and present**: AISpaceFlow is great for viewing diagrams on mobile during meetings or code reviews
 2. **Quick edits**: Simple changes like moving nodes or editing labels work well
 3. **Export on-the-go**: Export diagrams to include in documents or presentations
 

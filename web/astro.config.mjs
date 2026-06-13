@@ -3,7 +3,7 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://www.openflowkit.com',
+  site: 'https://www.aispaceflow.com',
   output: 'static',
   integrations: [react()],
   vite: {

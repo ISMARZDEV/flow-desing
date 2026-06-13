@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Smart Layout
-description: Use ELK-based layout to turn rough graphs into cleaner, more readable diagrams in OpenFlowKit.
+description: Use ELK-based layout to turn rough graphs into cleaner, more readable diagrams in AISpaceFlow.
 ---
 
-OpenFlowKit uses ELK-based layout strategies to turn rough graphs into readable diagrams quickly.
+AISpaceFlow uses ELK-based layout strategies to turn rough graphs into readable diagrams quickly.
 
 ## When to use auto layout
 

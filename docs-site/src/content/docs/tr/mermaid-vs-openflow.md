@@ -14,7 +14,7 @@ Mermaid ve OpenFlow DSL benzer görünen ama farklı amaçlara hizmet eden iki m
 
 ## OpenFlow DSL ne zaman seçilmeli?
 
-- OpenFlowKit ana düzenleme ortamıysa
+- AISpaceFlow ana düzenleme ortamıysa
 - editör içi sadakat önemliyse
 - Mermaid kısıtları gereksizse
 

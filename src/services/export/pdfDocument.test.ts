@@ -10,7 +10,7 @@ describe('createPdfFromJpeg', () => {
       jpegDataUrl: TINY_JPEG_DATA_URL,
       width: 320,
       height: 180,
-      title: 'OpenFlowKit Diagram',
+      title: 'AISpaceFlow Diagram',
     });
 
     expect(pdfBlob.type).toBe('application/pdf');

@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Figma Design Import
-description: Fetch colors and text styles from Figma and apply them to an OpenFlowKit design system.
+description: Fetch colors and text styles from Figma and apply them to an AISpaceFlow design system.
 ---
 
-OpenFlowKit includes a Figma import flow for design-system work. Instead of recreating theme tokens manually, you can fetch styles from a Figma file and apply them to a diagram theme.
+AISpaceFlow includes a Figma import flow for design-system work. Instead of recreating theme tokens manually, you can fetch styles from a Figma file and apply them to a diagram theme.
 
 ## What you need
 
@@ -28,7 +28,7 @@ The current import flow can preview:
 - text styles
 - font families represented in those text styles
 
-After review, you can apply the result to a design system inside OpenFlowKit.
+After review, you can apply the result to a design system inside AISpaceFlow.
 
 ## Best use cases
 

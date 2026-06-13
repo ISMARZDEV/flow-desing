@@ -1,14 +1,14 @@
 ---
 draft: false
 title: Introduction
-description: OpenFlowKit turns code, structured imports, templates, and prompts into editable technical diagrams inside a local-first workspace.
+description: AISpaceFlow turns code, structured imports, templates, and prompts into editable technical diagrams inside a local-first workspace.
 ---
 
-OpenFlowKit is a local-first diagramming workspace for developers and builders. Its strongest path is simple: start from the most truthful input you already have, turn it into an editable diagram, then refine it visually instead of redrawing everything from scratch.
+AISpaceFlow is a local-first diagramming workspace for developers and builders. Its strongest path is simple: start from the most truthful input you already have, turn it into an editable diagram, then refine it visually instead of redrawing everything from scratch.
 
 ## Best reasons to use it
 
-OpenFlowKit works best when a diagram needs to evolve instead of staying static:
+AISpaceFlow works best when a diagram needs to evolve instead of staying static:
 
 - start from code, Mermaid, SQL, OpenAPI, Terraform, infrastructure files, or a strong starter template
 - convert that source into an editable first draft instead of a dead export
@@ -18,14 +18,14 @@ OpenFlowKit works best when a diagram needs to evolve instead of staying static:
 
 ## Strongest starting paths
 
-If you are evaluating OpenFlowKit quickly, start with one of these:
+If you are evaluating AISpaceFlow quickly, start with one of these:
 
 - paste SQL or OpenAPI and generate a structured first draft
 - import Terraform, Kubernetes, or other infra-oriented source text
 - paste Mermaid or OpenFlow DSL and keep editing on the canvas
 - start from a developer-oriented template when structure matters more than exact content
 - use Flowpilot when you need a fast architecture draft from code or a prompt
-- connect the MCP server when you want Claude Desktop, Cursor, Windsurf, or another MCP client to generate, validate, convert, or revise OpenFlowKit diagrams
+- connect the MCP server when you want Claude Desktop, Cursor, Windsurf, or another MCP client to generate, validate, convert, or revise AISpaceFlow diagrams
 
 ## Core product surfaces
 
@@ -60,7 +60,7 @@ Diagram state lives in the browser by default. You choose when to export, share,
 
 ### Multiple input modes
 
-OpenFlowKit does not force a single source of truth. You can work visually, with AI, through OpenFlow DSL, through Mermaid, through structured imports, or from developer-oriented starter flows.
+AISpaceFlow does not force a single source of truth. You can work visually, with AI, through OpenFlow DSL, through Mermaid, through structured imports, or from developer-oriented starter flows.
 
 ### Editable outputs
 
@@ -68,7 +68,7 @@ Generated and imported diagrams come back into the same editable canvas model ra
 
 ### Home and editor are separate surfaces
 
-OpenFlowKit now treats the home screen as the workspace listing surface and the editor as the action surface. The app does not create a fake default flow just to get you onto the canvas.
+AISpaceFlow now treats the home screen as the workspace listing surface and the editor as the action surface. The app does not create a fake default flow just to get you onto the canvas.
 
 ## Start here
 
@@ -76,5 +76,5 @@ OpenFlowKit now treats the home screen as the workspace listing surface and the 
 - Read [Import from Structured Data](/import-from-data/) if you already have SQL, OpenAPI, code, or infra text.
 - Read [Choose an Input Mode](/choose-input-mode/) if you are deciding between templates, import, AI, and diagram-as-code.
 - Read [Studio Overview](/studio-overview/) for the AI, code, import, and lint flows.
-- Read [MCP Server](/mcp-server/) to drive OpenFlowKit from AI coding clients.
+- Read [MCP Server](/mcp-server/) to drive AISpaceFlow from AI coding clients.
 - Read [Templates & Asset Libraries](/templates-assets/) for starter flows and reusable visual libraries.

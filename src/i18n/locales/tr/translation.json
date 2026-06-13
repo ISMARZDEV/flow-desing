@@ -238,7 +238,7 @@
     },
     "solution": {
       "title": "Çözüm",
-      "description": "OpenFlowKit her iki dünyanın en iyisini bir araya getirir."
+      "description": "AISpaceFlow her iki dünyanın en iyisini bir araya getirir."
     },
     "demo": {
       "title": "Eskiz için sade.",
@@ -263,11 +263,11 @@
     },
     "footer": {
       "rights": "Tüm hakları saklıdır.",
-      "madeWith": "OpenFlowKit Ekibi tarafından ❤️ ile yapıldı"
+      "madeWith": "AISpaceFlow Ekibi tarafından ❤️ ile yapıldı"
     }
   },
   "home": {
-    "appName": "OpenFlowKit",
+    "appName": "AISpaceFlow",
     "title": "Gösterge Paneli",
     "description": "Akışlarınızı ve diyagramlarınızı yönetin.",
     "recentFiles": "Son Dosyalar",
@@ -405,7 +405,7 @@
     "importFailed": "İçe aktarma başarısız oldu"
   },
   "welcome": {
-    "title": "OpenFlowKit",
+    "title": "AISpaceFlow",
     "description": "Geliştirici odaklı tuval üzerinde güzel, yapılandırılmış diyagramlar tasarlayın.",
     "getStarted": "Hemen Başla",
     "press": "Kısayollar için",
@@ -440,7 +440,7 @@
   "pricing": {
     "title": "Premium özellikler.",
     "subtitle": "Sıfır fiyat etiketi.",
-    "description": "OpenFlowKit %100 açık kaynak. Satış görüşmesi arkasına gizlenmiş \"Enterprise Edition\" yok.",
+    "description": "AISpaceFlow %100 açık kaynak. Satış görüşmesi arkasına gizlenmiş \"Enterprise Edition\" yok.",
     "mitLicense": "MIT Lisansı",
     "freeForever": "Sonsuza Kadar Ücretsiz.",
     "fullAccess": "Çekirdek motora tam erişim.",
@@ -511,7 +511,7 @@
     "badge": "İş Akışları",
     "title": "Bir motor.",
     "subtitle": "Üç yerel iş akışı.",
-    "description": "OpenFlowKit, zaten kullanmakta olduğunuz araca uyum sağlar. Açılacak yeni sekme yok. Bağlam değiştirme yok.",
+    "description": "AISpaceFlow, zaten kullanmakta olduğunuz araca uyum sağlar. Açılacak yeni sekme yok. Bağlam değiştirme yok.",
     "engineering": "Mühendislik",
     "diagramAsCode": "KOD OLARAK DİYAGRAM",
     "engineeringDesc": "DSL'imizde veya Mermaid.js sözdiziminde diyagramlar yazın. Kodu yapıştırın, tamamen düzenlenmiş bir diyagram elde edin. Sürüm kontrolü için JSON olarak dışa aktarın.",
@@ -529,7 +529,7 @@
     "badge": "Eklenti Gerektirmez",
     "title": "Kodu kopyalayın.",
     "subtitle": "Tasarımı yapıştırın.",
-    "description": "OpenFlowKit'ten bir diyagram kopyalayın ve doğrudan Figma'ya yapıştırın — düz görüntü değil, düzenlenebilir metin ve temiz vektör şekiller elde edersiniz. Eklenti gerekmez.",
+    "description": "AISpaceFlow'ten bir diyagram kopyalayın ve doğrudan Figma'ya yapıştırın — düz görüntü değil, düzenlenebilir metin ve temiz vektör şekiller elde edersiniz. Eklenti gerekmez.",
     "editableText": "Düzenlenebilir Metin",
     "vectorFidelity": "Vektör Sadakati",
     "selected": "Seçili",
@@ -540,13 +540,13 @@
     "badge": "Yapım Aşamasında",
     "title": "Açık geliştirin.",
     "subtitle": "Motoru şekillendirin.",
-    "description": "OpenFlowKit yeni başlıyor. Çekirdek motoru açık olarak inşa ediyoruz. İlk günden bize katılın.",
+    "description": "AISpaceFlow yeni başlıyor. Çekirdek motoru açık olarak inşa ediyoruz. İlk günden bize katılın.",
     "starTheRepo": "Repoyu Yıldızlayın",
     "openSource": "Açık Kaynak",
     "openSourceDesc": "Çekirdek motor MIT lisanslıdır. Kaynak kodunu okuyun, PR gönderin veya dahili araçlarınız için forklayın.",
     "prsWelcome": "PR'ler Hoş Geldiniz",
     "community": "Topluluk",
-    "communityDesc": "OpenFlowKit üzerinde çalışan geliştiricilere katılın.",
+    "communityDesc": "AISpaceFlow üzerinde çalışan geliştiricilere katılın.",
     "roadmap": "Yol Haritası",
     "coreRenderer": "Çekirdek Render",
     "flowpilotAI": "Flowpilot Yapay Zeka"
@@ -592,7 +592,7 @@
       },
       "dslSyntax": {
         "title": "DSL Sözdizimi",
-        "description": "OpenFlowKit DSL'den bir örnek göster.",
+        "description": "AISpaceFlow DSL'den bir örnek göster.",
         "icon": "{}"
       }
     }
@@ -1453,7 +1453,7 @@
   },
   "mcpSettings": {
     "title": "AI araçlarını bağla (MCP)",
-    "intro": "OpenFlowKit MCP sunucusunu Claude Desktop, Cursor, Windsurf veya herhangi bir MCP istemcisine ekle. Asistanın yerel olarak çalışan diyagram araçları kazanır, API anahtarı gerekmez, veri makinenden çıkmaz.",
+    "intro": "AISpaceFlow MCP sunucusunu Claude Desktop, Cursor, Windsurf veya herhangi bir MCP istemcisine ekle. Asistanın yerel olarak çalışan diyagram araçları kazanır, API anahtarı gerekmez, veri makinenden çıkmaz.",
     "installHeading": "Sunucuyu kur",
     "installNote": "Node 18+ gerekir. Global kurulum gerekmez, npx isteğe bağlı indirir.",
     "configHeading": "AI asistanına ekle",
@@ -1487,7 +1487,7 @@
   "mcp": {
     "pageTitle": "Connect AI tools",
     "pageSubtitle": "Give any MCP client first-class diagramming tools. Local-first, no API key.",
-    "visualAlt": "Your AI client connects to the OpenFlowKit MCP server over stdio, which provides local diagramming tools.",
+    "visualAlt": "Your AI client connects to the AISpaceFlow MCP server over stdio, which provides local diagramming tools.",
     "visualClient": "Your AI client",
     "visualCaption": "Local · stdio · no API key"
   }

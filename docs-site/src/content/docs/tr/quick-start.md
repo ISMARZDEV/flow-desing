@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Quick Start
-description: İlk OpenFlowKit diyagramınızı tuval, şablonlar, yapay zeka, kod veya yapılandırılmış içe aktarma ile oluşturun.
+description: İlk AISpaceFlow diyagramınızı tuval, şablonlar, yapay zeka, kod veya yapılandırılmış içe aktarma ile oluşturun.
 ---
 
 Bu sayfa, mevcut üründe hızlıca üretken olmanız için en kısa güvenilir yoldur.

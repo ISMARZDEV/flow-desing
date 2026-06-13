@@ -10,14 +10,14 @@ interface Props {
 }
 
 const { title, description, canonicalPath = '/', schema } = Astro.props;
-const siteUrl = 'https://openflowkit.com';
+const siteUrl = 'https://aispaceflow.com';
 const canonicalUrl = new URL(canonicalPath, siteUrl).toString();
 const ogImage = `${siteUrl}/readme/1.png`;
 const baseSchemas = [
   {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'OpenFlowKit',
+    name: 'AISpaceFlow',
     description,
     url: canonicalUrl,
     applicationCategory: 'DesignApplication',
@@ -28,15 +28,15 @@ const baseSchemas = [
   {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'OpenFlowKit',
+    name: 'AISpaceFlow',
     url: siteUrl,
-    logo: `${siteUrl}/Logo_openflowkit.svg`,
-    sameAs: ['https://github.com/Vrun-design/openflowkit'],
+    logo: `${siteUrl}/Logo_aispaceflow.svg`,
+    sameAs: ['https://github.com/Vrun-design/aispaceflow'],
   },
   {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'OpenFlowKit',
+    name: 'AISpaceFlow',
     url: siteUrl,
     description:
       'Open-source, local-first AI diagramming for architecture diagrams, flowcharts, system design, and export workflows.',
@@ -58,16 +58,16 @@ const schemas = [...baseSchemas, ...extraSchemas];
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:site_name" content="OpenFlowKit" />
+    <meta property="og:site_name" content="AISpaceFlow" />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="OpenFlowKit product preview" />
+    <meta property="og:image:alt" content="AISpaceFlow product preview" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
-    <meta name="twitter:image:alt" content="OpenFlowKit product preview" />
+    <meta name="twitter:image:alt" content="AISpaceFlow product preview" />
     <script type="application/ld+json" set:html={JSON.stringify(schemas)} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -2,12 +2,12 @@
 
 <br/>
 
-<img src="public/favicon.svg" width="72" alt="OpenFlowKit" />
+<img src="public/favicon.svg" width="72" alt="AISpaceFlow" />
 
 <br/>
 <br/>
 
-<h1>OpenFlowKit</h1>
+<h1>AISpaceFlow</h1>
 
 <h3>The open-source diagramming studio for builders.</h3>
 
@@ -28,11 +28,11 @@
 <br/>
 
 <p>
-  <a href="https://app.openflowkit.com"><b>→ Launch the App</b></a>
+  <a href="https://app.aispaceflow.com"><b>→ Launch the App</b></a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://docs.openflowkit.com">Documentation</a>
+  <a href="https://docs.aispaceflow.com">Documentation</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://openflowkit.com">Website</a>
+  <a href="https://aispaceflow.com">Website</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="https://github.com/ISMARZDEV/flow-desing/issues">Issues</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -41,14 +41,14 @@
 
 <br/>
 
-<a href="https://www.producthunt.com/products/openflowkit" target="_blank">
-  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=1081019&theme=light&period=weekly&topic_id=44" alt="OpenFlowKit on Product Hunt" width="200" height="43" />
+<a href="https://www.producthunt.com/products/aispaceflow" target="_blank">
+  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=1081019&theme=light&period=weekly&topic_id=44" alt="AISpaceFlow on Product Hunt" width="200" height="43" />
 </a>
 
 <br/>
 <br/>
 
-<img src="readme-media/GIF-OFK-F.gif" alt="OpenFlowKit in action" width="100%" />
+<img src="readme-media/GIF-OFK-F.gif" alt="AISpaceFlow in action" width="100%" />
 
 <br/>
 <br/>
@@ -81,13 +81,13 @@
 <table>
 <tr>
 <td width="33%">
-  <img src="readme-media/Sample -GIF-1.gif" alt="OpenFlowKit demo 1" width="100%" />
+  <img src="readme-media/Sample -GIF-1.gif" alt="AISpaceFlow demo 1" width="100%" />
 </td>
 <td width="33%">
-  <img src="readme-media/Sample -GIF-2.gif" alt="OpenFlowKit demo 2" width="100%" />
+  <img src="readme-media/Sample -GIF-2.gif" alt="AISpaceFlow demo 2" width="100%" />
 </td>
 <td width="33%">
-  <img src="readme-media/Sample -GIF-3.gif" alt="OpenFlowKit demo 3" width="100%" />
+  <img src="readme-media/Sample -GIF-3.gif" alt="AISpaceFlow demo 3" width="100%" />
 </td>
 </tr>
 </table>
@@ -96,9 +96,9 @@
 
 ---
 
-## Why OpenFlowKit?
+## Why AISpaceFlow?
 
-Every diagramming tool makes a compromise. OpenFlowKit doesn't.
+Every diagramming tool makes a compromise. AISpaceFlow doesn't.
 
 | Tool                    | What's missing                                                                |
 | ----------------------- | ----------------------------------------------------------------------------- |
@@ -108,13 +108,13 @@ Every diagramming tool makes a compromise. OpenFlowKit doesn't.
 | **Lucidchart / Miro**   | Cloud lock-in — expensive, account required, your data lives on their servers |
 | **PlantUML**            | Server-dependent rendering — no visual editor, no local-first model           |
 
-OpenFlowKit is the **only MIT-licensed tool** that combines a real workspace home, a professional visual canvas, bidirectional diagram-as-code, AI generation from 10 providers (including fully-local Ollama), **automatic icon assignment from 1,600+ tech icons**, anchored auto-layout, hardware-encoded cinematic MP4 export, and a Model Context Protocol server so Claude / Cursor / Windsurf can drive it directly — all with zero server-side storage.
+AISpaceFlow is the **only MIT-licensed tool** that combines a real workspace home, a professional visual canvas, bidirectional diagram-as-code, AI generation from 10 providers (including fully-local Ollama), **automatic icon assignment from 1,600+ tech icons**, anchored auto-layout, hardware-encoded cinematic MP4 export, and a Model Context Protocol server so Claude / Cursor / Windsurf can drive it directly — all with zero server-side storage.
 
 ---
 
 ## Feature highlights
 
-|                                       | OpenFlowKit | Excalidraw | Draw.io | Mermaid | Lucidchart |
+|                                       | AISpaceFlow | Excalidraw | Draw.io | Mermaid | Lucidchart |
 | ------------------------------------- | :---------: | :--------: | :-----: | :-----: | :--------: |
 | Visual canvas editor                  |     ✅      |     ✅     |   ✅    |   ❌    |     ✅     |
 | Bidirectional diagram-as-code         |     ✅      |     ❌     |   ❌    |   ✅    |     ❌     |
@@ -132,7 +132,7 @@ OpenFlowKit is the **only MIT-licensed tool** that combines a real workspace hom
 
 ## Paste Mermaid → Beautiful Diagrams
 
-Paste any Mermaid flowchart, architecture, state diagram, class diagram, ER diagram, sequence diagram, mindmap, or journey — all 8 diagram families. OpenFlowKit renders it on a visual canvas and automatically assigns the correct branded icon to every technology node.
+Paste any Mermaid flowchart, architecture, state diagram, class diagram, ER diagram, sequence diagram, mindmap, or journey — all 8 diagram families. AISpaceFlow renders it on a visual canvas and automatically assigns the correct branded icon to every technology node.
 
 ```
 flowchart TD
@@ -175,7 +175,7 @@ Describe your system in plain English. AI generates a diagram on the canvas with
 
 ## Home first, editor second
 
-OpenFlowKit now treats the product as two clear surfaces:
+AISpaceFlow now treats the product as two clear surfaces:
 
 - **Home** for creating, opening, duplicating, importing, and organizing flows
 - **Editor** for actual canvas work once a real document exists
@@ -186,7 +186,7 @@ That means the app does not create a fake default flow just to get you onto the 
 
 ## Flowpilot — AI generation with any model
 
-Flowpilot sits directly in the editor. Describe a system, paste source code, upload a screenshot, or ask it to refine what's already on the canvas. Your API key is stored in your browser and sent directly to the provider — OpenFlowKit's servers never see it.
+Flowpilot sits directly in the editor. Describe a system, paste source code, upload a screenshot, or ask it to refine what's already on the canvas. Your API key is stored in your browser and sent directly to the provider — AISpaceFlow's servers never see it.
 
 **10 providers. Bring your own key. Switch any time. One runs entirely on your laptop.**
 
@@ -246,7 +246,7 @@ Not a freeform whiteboard. Structured diagram types with opinionated defaults, c
 
 ## Editor workflow built for technical diagrams
 
-OpenFlowKit works best when you move between the right surfaces instead of forcing everything through one panel:
+AISpaceFlow works best when you move between the right surfaces instead of forcing everything through one panel:
 
 - **Toolbar add menu** for quick insert actions
 - **Command Center** for templates, import, assets, search, layout, pages, layers, and design systems
@@ -265,26 +265,26 @@ Designed for architecture reviews, onboarding docs, and demos where a static ima
 
 > **No other open-source diagramming tool does this.**
 
-On modern browsers (Chrome / Edge / Safari 16.4+ / Firefox 130+) OpenFlowKit encodes via **WebCodecs `VideoEncoder` + an in-browser MP4 muxer** — H.264 baseline, hardware-accelerated, **faster than real-time**, deterministic frame timing. No more dropped frames under load. MediaRecorder remains a fallback for older browsers, so the feature is purely additive.
+On modern browsers (Chrome / Edge / Safari 16.4+ / Firefox 130+) AISpaceFlow encodes via **WebCodecs `VideoEncoder` + an in-browser MP4 muxer** — H.264 baseline, hardware-accelerated, **faster than real-time**, deterministic frame timing. No more dropped frames under load. MediaRecorder remains a fallback for older browsers, so the feature is purely additive.
 
 ---
 
-## 🪄 MCP Server — drive OpenFlowKit from Claude Desktop, Cursor, Windsurf
+## 🪄 MCP Server — drive AISpaceFlow from Claude Desktop, Cursor, Windsurf
 
-Point any MCP client at the [`@ismarzdev/openflowkit-mcp`](mcp-server/) package and your AI assistant gains local-first diagramming tools — no API key, no cloud round-trip. Your client already has an LLM, so OpenFlowKit MCP supplies deterministic local validation, codebase analysis, templates, icon lookup, and viewer links.
+Point any MCP client at the [`@ismarzdev/aispaceflow-mcp`](mcp-server/) package and your AI assistant gains local-first diagramming tools — no API key, no cloud round-trip. Your client already has an LLM, so AISpaceFlow MCP supplies deterministic local validation, codebase analysis, templates, icon lookup, and viewer links.
 
 ```json
 {
   "mcpServers": {
-    "openflowkit": {
+    "aispaceflow": {
       "command": "npx",
-      "args": ["-y", "@ismarzdev/openflowkit-mcp"]
+      "args": ["-y", "@ismarzdev/aispaceflow-mcp"]
     }
   }
 }
 ```
 
-Then ask Claude: *"Read the OpenFlowKit DSL cheatsheet, create a checkout flow with a promo-code branch and a Stripe webhook step, validate it, and create a viewer URL."* The DSL comes back in seconds and stays editable in OpenFlowKit.
+Then ask Claude: *"Read the AISpaceFlow DSL cheatsheet, create a checkout flow with a promo-code branch and a Stripe webhook step, validate it, and create a viewer URL."* The DSL comes back in seconds and stays editable in AISpaceFlow.
 
 - **8 local-first tools** — validate DSL, create viewer URLs, analyze codebases, find icon slugs, fetch starter templates, and inspect capabilities (no API key, runs on your machine)
 - **5 resources** — DSL cheatsheet, template catalog, template bodies, full icon catalog, and per-provider icon catalogs
@@ -338,7 +338,7 @@ Plus: smart alignment guides, snap-to-grid, multi-select, pages, layers, section
 Recently shipped (latest milestone):
 
 - ✅ **WebCodecs H.264 MP4 export** — faster-than-realtime, hardware-accelerated, deterministic
-- ✅ **MCP server** — `@ismarzdev/openflowkit-mcp` for Claude Desktop, Cursor, Windsurf, any MCP client
+- ✅ **MCP server** — `@ismarzdev/aispaceflow-mcp` for Claude Desktop, Cursor, Windsurf, any MCP client
 - ✅ **Anchored layout** — pin nodes so auto-layout arranges around them
 - ✅ **Ollama provider** — fully offline diagramming, no API key, no cost
 - ✅ **AI self-correction loop** — bad DSL → AI sees its own output + parser error → returns corrected DSL
@@ -361,7 +361,7 @@ Current roadmap focus:
 
 ```bash
 git clone https://github.com/ISMARZDEV/flow-desing.git
-cd openflowkit
+cd aispaceflow
 npm install
 npm run dev
 ```
@@ -374,7 +374,7 @@ Open [http://localhost:5173](http://localhost:5173). Done.
 
 ## Self-host
 
-OpenFlowKit is a pure static SPA. There is no backend. Deploy the `dist/` folder anywhere that serves HTML.
+AISpaceFlow is a pure static SPA. There is no backend. Deploy the `dist/` folder anywhere that serves HTML.
 
 **Cloudflare Pages / Netlify / Vercel:**
 
@@ -386,8 +386,8 @@ npm run build
 **Docker:**
 
 ```bash
-docker build -t openflowkit .
-docker run --rm -p 3045:3045 openflowkit
+docker build -t aispaceflow .
+docker run --rm -p 3045:3045 aispaceflow
 ```
 
 Open [http://localhost:3045](http://localhost:3045). The container serves the production build with nginx, SPA route fallback, long-lived caching for hashed assets, and the same security headers used by the static hosting path.
@@ -408,7 +408,7 @@ No database. No secrets. No infrastructure. One folder, or one container.
 | State         | Zustand                                                   |
 | Storage       | IndexedDB — local-first, no backend                       |
 | Styling       | Tailwind CSS                                              |
-| Agent surface | `@ismarzdev/openflowkit-mcp` — Model Context Protocol stdio  |
+| Agent surface | `@ismarzdev/aispaceflow-mcp` — Model Context Protocol stdio  |
 | Collaboration | WebRTC P2P (opt-in, off by default)                       |
 | i18n          | react-i18next — 7 languages                               |
 | Testing       | Vitest + Playwright                                       |
@@ -436,14 +436,14 @@ npm run lint       # ESLint + TypeScript type-check
 
 <br/>
 
-**OpenFlowKit** is [MIT licensed](LICENSE), locally hosted, and built in the open.<br/>
+**AISpaceFlow** is [MIT licensed](LICENSE), locally hosted, and built in the open.<br/>
 No cloud required. No account required. No lock-in.
 
 <br/>
 
 |                                                                                            |                                                                                                      |                                        |                                                                      |
 | :----------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :------------------------------------: | :------------------------------------------------------------------: |
-|                      [**→ Launch App**](https://app.openflowkit.com)                       |                               [**Docs**](https://docs.openflowkit.com)                               | [**Website**](https://openflowkit.com) | [**Changelog**](https://github.com/ISMARZDEV/flow-desing/releases) |
+|                      [**→ Launch App**](https://app.aispaceflow.com)                       |                               [**Docs**](https://docs.aispaceflow.com)                               | [**Website**](https://aispaceflow.com) | [**Changelog**](https://github.com/ISMARZDEV/flow-desing/releases) |
 | [Bug Report](https://github.com/ISMARZDEV/flow-desing/issues/new?template=bug_report.md) | [Feature Request](https://github.com/ISMARZDEV/flow-desing/issues/new?template=feature_request.md) | [Contributing Guide](CONTRIBUTING.md)  |                    [Security Policy](SECURITY.md)                    |
 
 <br/>
@@ -452,12 +452,12 @@ No cloud required. No account required. No lock-in.
 
 <br/>
 
-**[If OpenFlowKit saves you time, the most impactful thing you can do is give it a star.](https://github.com/ISMARZDEV/flow-desing/stargazers)**<br/>
+**[If AISpaceFlow saves you time, the most impactful thing you can do is give it a star.](https://github.com/ISMARZDEV/flow-desing/stargazers)**<br/>
 **[It helps other developers find the project.](https://github.com/ISMARZDEV/flow-desing/stargazers)**
 
 <br/>
 
-[![Star OpenFlowKit on GitHub](https://img.shields.io/github/stars/ISMARZDEV/flow-desing?style=for-the-badge&logo=github&color=facc15&label=Star%20on%20GitHub)](https://github.com/ISMARZDEV/flow-desing/stargazers)
+[![Star AISpaceFlow on GitHub](https://img.shields.io/github/stars/ISMARZDEV/flow-desing?style=for-the-badge&logo=github&color=facc15&label=Star%20on%20GitHub)](https://github.com/ISMARZDEV/flow-desing/stargazers)
 
 <br/>
 

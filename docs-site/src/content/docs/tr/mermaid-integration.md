@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Mermaid Integration
-description: OpenFlowKit’i görsel düzenleme yüzeyi olarak kullanırken Mermaid içe aktarın, düzenleyin, doğrulayın ve dışa aktarın.
+description: AISpaceFlow’i görsel düzenleme yüzeyi olarak kullanırken Mermaid içe aktarın, düzenleyin, doğrulayın ve dışa aktarın.
 ---
 
-OpenFlowKit, Mermaid için içe aktarma, düzenleme ve dışa aktarma yolları sunar. Ancak Mermaid’i editörün tek doğruluk kaynağı değil, bir uyumluluk katmanı olarak düşünmek gerekir.
+AISpaceFlow, Mermaid için içe aktarma, düzenleme ve dışa aktarma yolları sunar. Ancak Mermaid’i editörün tek doğruluk kaynağı değil, bir uyumluluk katmanı olarak düşünmek gerekir.
 
 ## Mermaid ne zaman doğru seçimdir?
 
@@ -25,7 +25,7 @@ Studio’nun Code alanında Mermaid modu vardır. Burada:
 
 ## Sadakat beklentisi
 
-Mermaid round-trip faydalıdır, ancak OpenFlowKit’in tüm kavramları birebir eşlenmez. Özellikle şu konularda dikkatli olun:
+Mermaid round-trip faydalıdır, ancak AISpaceFlow’in tüm kavramları birebir eşlenmez. Özellikle şu konularda dikkatli olun:
 
 - elle ince ayarlanmış yerleşimler
 - sağlayıcı ikonlarıyla çalışan mimari sunumlar

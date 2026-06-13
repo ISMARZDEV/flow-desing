@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: openflowkit-collab
+    name: aispaceflow-collab
     runtime: node
     plan: free
     buildCommand: npm install

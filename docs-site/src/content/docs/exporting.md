@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Exporting
-description: Export diagrams from OpenFlowKit as images, cinematic media, JSON, code formats, design-tool handoff, or share/embed links.
+description: Export diagrams from AISpaceFlow as images, cinematic media, JSON, code formats, design-tool handoff, or share/embed links.
 ---
 
 Export lives in the top-right menu of the editor and covers both downloadable files and clipboard-oriented formats.
@@ -27,7 +27,7 @@ Use SVG when you need vector output for docs, websites, or further design-tool h
 
 ### JSON
 
-This is the most faithful archival format for re-import into OpenFlowKit. Use it for:
+This is the most faithful archival format for re-import into AISpaceFlow. Use it for:
 
 - backups
 - browser-to-browser handoff

@@ -1,10 +1,10 @@
-const APP_SHELL_CACHE = 'openflowkit-app-shell-v1';
+const APP_SHELL_CACHE = 'aispaceflow-app-shell-v2';
 const APP_SHELL_ASSETS = [
   '/',
   '/index.html',
   '/manifest.webmanifest',
-  '/Logo_openflowkit.svg',
-  '/favicon.svg',
+  '/logos/favicon-32.png',
+  '/logos/fav-icon.png',
 ];
 
 self.addEventListener('install', (event) => {

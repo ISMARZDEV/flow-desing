@@ -29,11 +29,11 @@ export function Footer({ onLaunch }: FooterProps): React.ReactElement {
               data-analytics-placement="footer-logo"
               data-analytics-target="app"
               className="flex items-center gap-2 cursor-pointer group"
-              aria-label="Open OpenFlowKit"
+              aria-label="Open AISpaceFlow"
             >
               <OpenFlowLogo className="h-6 w-6 transition-transform group-hover:scale-105" />
               <span className="font-bold text-brand-primary text-sm tracking-tight">
-                OpenFlowKit
+                AISpaceFlow
               </span>
             </button>
             <div className="flex items-center gap-2 text-xs text-brand-secondary font-medium mt-1">
@@ -46,7 +46,7 @@ export function Footer({ onLaunch }: FooterProps): React.ReactElement {
           {/* Product Hunt Badge */}
           <div className="flex justify-center md:w-1/3">
             <a
-              href="https://www.producthunt.com/products/openflowkit?embed=true&utm_source=badge-top-post-topic-badge&utm_medium=badge&utm_campaign=badge-openflowkit"
+              href="https://www.producthunt.com/products/aispaceflow?embed=true&utm_source=badge-top-post-topic-badge&utm_medium=badge&utm_campaign=badge-aispaceflow"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-90 transition-opacity transform hover:scale-105 duration-300"
@@ -73,7 +73,7 @@ export function Footer({ onLaunch }: FooterProps): React.ReactElement {
               shape="pill"
               onClick={handleOpenGithub}
               className="group h-12 gap-3 px-5"
-              aria-label="OpenFlowKit on GitHub"
+              aria-label="AISpaceFlow on GitHub"
               data-analytics-event="landing_github_clicked"
               data-analytics-placement="footer"
               data-analytics-target="github"

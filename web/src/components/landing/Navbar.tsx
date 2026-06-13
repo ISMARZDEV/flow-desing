@@ -72,11 +72,11 @@ export function Navbar({ isScrolled, onLaunch }: NavbarProps): React.ReactElemen
             data-analytics-placement="navbar-logo"
             data-analytics-target="app"
             className="flex items-center gap-2.5 cursor-pointer group select-none min-w-0"
-            aria-label="Open OpenFlowKit"
+            aria-label="Open AISpaceFlow"
           >
             <OpenFlowLogo className="h-8 w-8 shrink-0 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105" />
             <span className="text-lg font-bold tracking-tight text-brand-primary font-sans group-hover:opacity-80 transition-opacity whitespace-nowrap">
-              OpenFlowKit
+              AISpaceFlow
             </span>
           </button>
 

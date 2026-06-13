@@ -1,10 +1,10 @@
 ---
 draft: false
 title: OpenFlow DSL
-description: Use OpenFlow DSL as the editor-native text representation for OpenFlowKit diagrams.
+description: Use OpenFlow DSL as the editor-native text representation for AISpaceFlow diagrams.
 ---
 
-OpenFlow DSL is the native text representation used by OpenFlowKit Studio. It is the best option when you want a code-first representation that stays close to the editor's own graph model.
+OpenFlow DSL is the native text representation used by AISpaceFlow Studio. It is the best option when you want a code-first representation that stays close to the editor's own graph model.
 
 ## Where it fits
 
@@ -12,7 +12,7 @@ Use OpenFlow DSL when you want:
 
 - a readable editor-native syntax
 - deterministic structural edits before layout
-- a better fit than Mermaid for OpenFlowKit-specific workflows
+- a better fit than Mermaid for AISpaceFlow-specific workflows
 - an easier target for AI-generated code than raw JSON
 
 The Studio code panel can generate DSL from the current canvas and apply DSL back onto it.
@@ -78,7 +78,7 @@ Common edge styles are `->` for default flow, `==>` for primary flow, `-->` for 
 
 OpenFlow DSL is useful when:
 
-- OpenFlowKit is the primary editing environment
+- AISpaceFlow is the primary editing environment
 - you want a reviewable text representation without committing to Mermaid’s constraints
 - you want a format that maps more directly to editor-native concepts
 - you want AI to target a structure that is closer to the actual canvas model

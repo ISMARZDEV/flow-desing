@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ISMARZDEV/openflowkit-mcp",
-  "description": "Local-first OpenFlowKit diagramming tools for Claude, Cursor, Windsurf & other MCP clients.",
+  "name": "io.github.ISMARZDEV/aispaceflow-mcp",
+  "description": "Local-first AISpaceFlow diagramming tools for Claude, Cursor, Windsurf & other MCP clients.",
   "repository": {
     "url": "https://github.com/ISMARZDEV/flow-desing",
     "source": "github"
@@ -10,7 +10,7 @@
   "packages": [
     {
       "registryType": "npm",
-      "identifier": "@ismarzdev/openflowkit-mcp",
+      "identifier": "@ismarzdev/aispaceflow-mcp",
       "version": "0.1.2",
       "transport": {
         "type": "stdio"

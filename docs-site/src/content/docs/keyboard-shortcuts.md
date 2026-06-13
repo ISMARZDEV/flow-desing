@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Keyboard Shortcuts
-description: Reference the current keyboard shortcuts for editing, navigation, and diagram authoring in OpenFlowKit.
+description: Reference the current keyboard shortcuts for editing, navigation, and diagram authoring in AISpaceFlow.
 ---
 
 These are the current shortcut groups shown in the app.

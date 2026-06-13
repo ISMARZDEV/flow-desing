@@ -1,5 +1,5 @@
 {
-  "name": "openflowkit",
+  "name": "aispaceflow",
   "private": true,
   "version": "0.1.1",
   "type": "module",
@@ -8,7 +8,7 @@
     "docs-site",
     "mcp-server"
   ],
-  "homepage": "https://openflowkit.com",
+  "homepage": "https://aispaceflow.com",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -37,8 +37,8 @@
     "build:lib": "vite build -c vite.lib.config.ts",
     "build:lib:watch": "vite build -c vite.lib.config.ts --watch",
     "lint": "eslint . --ext ts,tsx --ignore-pattern 'web/**' --ignore-pattern 'docs-site/**' --report-unused-disable-directives --max-warnings 0",
-    "build:web": "pnpm --filter openflowkit-web build",
-    "build:docs": "pnpm --filter openflowkit-docs build",
+    "build:web": "pnpm --filter aispaceflow-web build",
+    "build:docs": "pnpm --filter aispaceflow-docs build",
     "bench:harness": "node scripts/benchmark-harness.mjs",
     "bench:summary": "node scripts/benchmark-summary.mjs",
     "bench:check": "node scripts/check-benchmark-results.mjs",

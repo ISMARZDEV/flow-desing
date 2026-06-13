@@ -218,7 +218,7 @@
     },
     "solution": {
       "title": "La solution",
-      "description": "OpenFlowKit combine le meilleur des deux mondes."
+      "description": "AISpaceFlow combine le meilleur des deux mondes."
     },
     "demo": {
       "title": "Simple pour esquisser.",
@@ -243,11 +243,11 @@
     },
     "footer": {
       "rights": "Tous droits réservés.",
-      "madeWith": "Fait avec ❤️ par l'équipe OpenFlowKit"
+      "madeWith": "Fait avec ❤️ par l'équipe AISpaceFlow"
     }
   },
   "home": {
-    "appName": "OpenFlowKit",
+    "appName": "AISpaceFlow",
     "title": "Tableau de bord",
     "description": "Gérez vos flux et diagrammes.",
     "recentFiles": "Fichiers récents",
@@ -385,7 +385,7 @@
     "importFailed": "Échec de l'importation"
   },
   "welcome": {
-    "title": "OpenFlowKit",
+    "title": "AISpaceFlow",
     "description": "Concevez de beaux diagrammes structurés avec un canevas orienté développeur.",
     "press": "Appuyez sur",
     "shortcuts": "pour les raccourcis",
@@ -420,7 +420,7 @@
   "pricing": {
     "title": "Fonctionnalités premium.",
     "subtitle": "Prix à zéro euro.",
-    "description": "OpenFlowKit est 100% open source. Pas d'édition Enterprise cachée.",
+    "description": "AISpaceFlow est 100% open source. Pas d'édition Enterprise cachée.",
     "mitLicense": "Licence MIT",
     "freeForever": "Gratuit pour toujours.",
     "fullAccess": "Accès complet au moteur principal.",
@@ -491,7 +491,7 @@
     "badge": "Flux de travail",
     "title": "Un moteur.",
     "subtitle": "Trois flux natifs.",
-    "description": "OpenFlowKit s'adapte à votre outil.",
+    "description": "AISpaceFlow s'adapte à votre outil.",
     "engineering": "Ingénierie",
     "diagramAsCode": "DIAGRAMME EN CODE",
     "engineeringDesc": "Écrire des diagrammes en DSL ou Mermaid.js.",
@@ -520,13 +520,13 @@
     "badge": "En construction",
     "title": "Construire en public.",
     "subtitle": "Façonner le moteur.",
-    "description": "OpenFlowKit fait ses premiers pas. Rejoignez-nous dès le premier jour.",
+    "description": "AISpaceFlow fait ses premiers pas. Rejoignez-nous dès le premier jour.",
     "starTheRepo": "Mettre une étoile au dépôt",
     "openSource": "Open Source",
     "openSourceDesc": "Licence MIT. Lire le code, soumettre des PR.",
     "prsWelcome": "PRs bienvenus",
     "community": "Communauté",
-    "communityDesc": "Rejoindre les développeurs qui construisent avec OpenFlowKit.",
+    "communityDesc": "Rejoindre les développeurs qui construisent avec AISpaceFlow.",
     "roadmap": "Feuille de route",
     "coreRenderer": "Moteur principal",
     "flowpilotAI": "Flowpilot"
@@ -572,7 +572,7 @@
       },
       "dslSyntax": {
         "title": "Syntaxe DSL",
-        "description": "Montrez un exemple du DSL OpenFlowKit.",
+        "description": "Montrez un exemple du DSL AISpaceFlow.",
         "icon": "{}"
       }
     }
@@ -1453,7 +1453,7 @@
   },
   "mcpSettings": {
     "title": "Connecter des outils IA (MCP)",
-    "intro": "Ajoutez le serveur MCP OpenFlowKit à Claude Desktop, Cursor, Windsurf ou à tout client MCP. Votre assistant gagne des outils de diagramme qui tournent localement, aucune clé d’API requise, aucune donnée ne quitte votre machine.",
+    "intro": "Ajoutez le serveur MCP AISpaceFlow à Claude Desktop, Cursor, Windsurf ou à tout client MCP. Votre assistant gagne des outils de diagramme qui tournent localement, aucune clé d’API requise, aucune donnée ne quitte votre machine.",
     "installHeading": "Installer le serveur",
     "installNote": "Nécessite Node 18+. Aucune installation globale, npx récupère à la demande.",
     "configHeading": "Ajouter à votre assistant IA",
@@ -1487,7 +1487,7 @@
   "mcp": {
     "pageTitle": "Connect AI tools",
     "pageSubtitle": "Give any MCP client first-class diagramming tools. Local-first, no API key.",
-    "visualAlt": "Your AI client connects to the OpenFlowKit MCP server over stdio, which provides local diagramming tools.",
+    "visualAlt": "Your AI client connects to the AISpaceFlow MCP server over stdio, which provides local diagramming tools.",
     "visualClient": "Your AI client",
     "visualCaption": "Local · stdio · no API key"
   }

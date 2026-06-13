@@ -83,7 +83,7 @@ export const useFlowExport = (
             jpegDataUrl,
             width,
             height,
-            title: 'OpenFlowKit Diagram',
+            title: 'AISpaceFlow Diagram',
           });
           createDownload(pdfBlob, buildExportFileName(exportBaseName, 'pdf'));
           addToast('Diagram exported as PDF!', 'success');

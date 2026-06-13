@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Studio Overview
-description: OpenFlowKit Studio yüzeyinde AI, kod, içe aktarma, altyapı çözümleme ve mimari lint akışlarını anlayın.
+description: AISpaceFlow Studio yüzeyinde AI, kod, içe aktarma, altyapı çözümleme ve mimari lint akışlarını anlayın.
 ---
 
 Studio, görsel tuvalin yanında çalışan yapılandırılmış üretim alanıdır. Tuval tek başına en iyi araç olmadığında Studio’ya geçersiniz.

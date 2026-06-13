@@ -4,7 +4,7 @@ title: Smart Layout
 description: ELK tabanlı düzen ile kaba grafikleri daha okunabilir diyagramlara dönüştürün.
 ---
 
-OpenFlowKit, kaba grafikleri hızlı biçimde daha okunabilir diyagramlara dönüştürmek için ELK tabanlı düzen stratejileri kullanır.
+AISpaceFlow, kaba grafikleri hızlı biçimde daha okunabilir diyagramlara dönüştürmek için ELK tabanlı düzen stratejileri kullanır.
 
 ## Otomatik düzen ne zaman kullanılmalı?
 

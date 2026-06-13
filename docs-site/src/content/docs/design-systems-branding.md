@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Design Systems & Branding
-description: Manage reusable design systems in OpenFlowKit and import or export theme definitions for consistent diagrams.
+description: Manage reusable design systems in AISpaceFlow and import or export theme definitions for consistent diagrams.
 ---
 
-OpenFlowKit includes design-system support so your diagrams can inherit a repeatable visual language instead of being styled one by one.
+AISpaceFlow includes design-system support so your diagrams can inherit a repeatable visual language instead of being styled one by one.
 
 ## What the design-system flow supports
 
@@ -37,7 +37,7 @@ The design-system view supports JSON import and export. That makes it possible t
 
 ## Relationship to Figma
 
-Figma style import is a related workflow. Use it when you want to fetch colors and text styles from a Figma file and apply them to a design system inside OpenFlowKit.
+Figma style import is a related workflow. Use it when you want to fetch colors and text styles from a Figma file and apply them to a design system inside AISpaceFlow.
 
 ## Recommended pattern
 

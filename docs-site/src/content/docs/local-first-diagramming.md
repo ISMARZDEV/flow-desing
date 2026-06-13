@@ -1,10 +1,10 @@
 ---
 draft: false
 title: Local-First Diagramming
-description: Understand what local-first means in OpenFlowKit and how it affects privacy, sharing, and day-to-day diagram work.
+description: Understand what local-first means in AISpaceFlow and how it affects privacy, sharing, and day-to-day diagram work.
 ---
 
-Local-first means your diagram work starts in the browser, not on a required hosted backend. In OpenFlowKit, that changes how you think about privacy, portability, and failure modes.
+Local-first means your diagram work starts in the browser, not on a required hosted backend. In AISpaceFlow, that changes how you think about privacy, portability, and failure modes.
 
 ## What local-first means here
 
@@ -16,7 +16,7 @@ In practical terms:
 - collaboration can fall back to local-only behavior instead of blocking all work
 - export is explicit, so you decide when a diagram leaves the current device
 
-OpenFlowKit now treats the browser database as the durable source of truth for saved document state. The live editor is rebuilt from that local data after reload rather than assuming the in-memory canvas is still available.
+AISpaceFlow now treats the browser database as the durable source of truth for saved document state. The live editor is rebuilt from that local data after reload rather than assuming the in-memory canvas is still available.
 
 ## Why it matters
 
@@ -29,7 +29,7 @@ Local-first workflows are useful when:
 
 ## What stays on the current device
 
-By default, OpenFlowKit keeps these things in browser-local storage on the current device:
+By default, AISpaceFlow keeps these things in browser-local storage on the current device:
 
 - saved diagrams and tabs
 - workspace home state and document listings
@@ -41,7 +41,7 @@ Session-only secrets can still be kept for just the current browser session when
 
 ## What it does not mean
 
-Local-first does not mean isolated forever. OpenFlowKit still supports:
+Local-first does not mean isolated forever. AISpaceFlow still supports:
 
 - exports for images, JSON, text formats, and design-tool handoff
 - collaboration rooms and share links

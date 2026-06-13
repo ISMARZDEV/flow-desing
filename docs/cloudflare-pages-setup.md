@@ -5,7 +5,7 @@ same repo but uses a different **build command** and **output directory**.
 
 ---
 
-## Project 1: App (`app.openflowkit.com`)
+## Project 1: App (`app.aispaceflow.com`)
 
 | Setting | Value |
 |---|---|
@@ -21,7 +21,7 @@ Add `VITE_OPENAI_BASE_URL` etc. if you wire AI proxy later.
 
 ---
 
-## Project 2: Docs (`docs.openflowkit.com`)
+## Project 2: Docs (`docs.aispaceflow.com`)
 
 | Setting | Value |
 |---|---|
@@ -34,7 +34,7 @@ Add `VITE_OPENAI_BASE_URL` etc. if you wire AI proxy later.
 
 ---
 
-## Project 3: Landing (`openflowkit.com` / `www.openflowkit.com`)
+## Project 3: Landing (`aispaceflow.com` / `www.aispaceflow.com`)
 
 | Setting | Value |
 |---|---|
@@ -51,9 +51,9 @@ Add `VITE_OPENAI_BASE_URL` etc. if you wire AI proxy later.
 
 After each project is created:
 
-1. **App**: Pages project settings → Custom domains → add `app.openflowkit.com`
-2. **Docs**: add `docs.openflowkit.com`
-3. **Landing**: add `openflowkit.com` and `www.openflowkit.com`
+1. **App**: Pages project settings → Custom domains → add `app.aispaceflow.com`
+2. **Docs**: add `docs.aispaceflow.com`
+3. **Landing**: add `aispaceflow.com` and `www.aispaceflow.com`
 
 Cloudflare handles SSL automatically for all domains on the same account.
 

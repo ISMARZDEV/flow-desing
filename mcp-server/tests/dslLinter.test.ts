@@ -53,4 +53,48 @@ describe('lintOpenFlowDsl', () => {
     expect(result.diagnostics.some((d) => d.message.includes('exactly two outgoing'))).toBe(true);
     expect(result.diagnostics.some((d) => d.message.includes('unlabeled outgoing'))).toBe(true);
   });
+
+  // --- Parity with the authoritative viewer parser (flowmindDSLParserV2.ts) ---
+
+  it('accepts all four real edge arrows, including dotted ..>', () => {
+    const result = lintOpenFlowDsl(
+      `flow: T\n[process] a: A\n[process] b: B\na -> b\na --> b\na ==> b\na ..>|x| b`
+    );
+    expect(result.ok).toBe(true);
+    expect(result.edgeCount).toBe(4);
+  });
+
+  it('rejects the stale dotted arrow `..` (must be `..>`) as an error', () => {
+    const result = lintOpenFlowDsl(`flow: T\n[process] a: A\n[process] b: B\na ..|x| b`);
+    expect(result.ok).toBe(false);
+    expect(result.diagnostics.some((d) => d.severity === 'error' && /\.\.>/.test(d.hint ?? ''))).toBe(
+      true
+    );
+  });
+
+  it('accepts a valid group container and its nested children', () => {
+    const result = lintOpenFlowDsl(
+      `flow: T\ngroup "Layer" {\n[architecture] a: API { archProvider: "azure", archResourceType: "web-api-management-services" }\n}`
+    );
+    expect(result.ok).toBe(true);
+    expect(result.declaredNodeIds).toContain('a');
+  });
+
+  it('rejects a group header that carries an id (group rg "...")', () => {
+    const result = lintOpenFlowDsl(`flow: T\ngroup rg "Layer" {\n[process] a: A\n}`);
+    expect(result.ok).toBe(false);
+    expect(result.diagnostics.some((d) => /group header/i.test(d.message))).toBe(true);
+  });
+
+  it('flags an unclosed group block', () => {
+    const result = lintOpenFlowDsl(`flow: T\ngroup "Layer" {\n[process] a: A`);
+    expect(result.ok).toBe(false);
+    expect(result.diagnostics.some((d) => /unclosed group/i.test(d.message))).toBe(true);
+  });
+
+  it('flags a stray closing brace', () => {
+    const result = lintOpenFlowDsl(`flow: T\n[process] a: A\n}`);
+    expect(result.ok).toBe(false);
+    expect(result.diagnostics.some((d) => /unexpected "}"/i.test(d.message))).toBe(true);
+  });
 });

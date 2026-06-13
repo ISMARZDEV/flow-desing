@@ -4,7 +4,7 @@ title: Choose an Input Mode
 description: Tuval, AI, OpenFlow DSL, Mermaid, yapılandırılmış içe aktarma veya Infrastructure Sync arasında doğru başlangıç modunu seçin.
 ---
 
-OpenFlowKit bir diyagramı üretmek için birden fazla yol sunar. Doğru seçim, zaten elinizde ne olduğuna bağlıdır.
+AISpaceFlow bir diyagramı üretmek için birden fazla yol sunar. Doğru seçim, zaten elinizde ne olduğuna bağlıdır.
 
 ## Hızlı eşleştirme
 

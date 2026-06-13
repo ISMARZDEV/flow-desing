@@ -1,7 +1,7 @@
 ---
 draft: false
 title: Properties Panel
-description: Use the right-side inspector to make exact node, edge, bulk-edit, and Studio-related adjustments in OpenFlowKit.
+description: Use the right-side inspector to make exact node, edge, bulk-edit, and Studio-related adjustments in AISpaceFlow.
 ---
 
 The Properties panel is the right-side inspector that appears when you select a node or edge. It is the main place for exact edits after rough structure is already on the canvas.

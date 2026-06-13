@@ -1,14 +1,14 @@
 ---
 draft: false
 title: V1 Beta Launch
-description: OpenFlowKit V1 beta dönüm noktasını ve o sürümün getirdiği ürün yönünü özetleyen tarihsel sürüm notu.
+description: AISpaceFlow V1 beta dönüm noktasını ve o sürümün getirdiği ürün yönünü özetleyen tarihsel sürüm notu.
 ---
 
 Bu sayfa, V1 beta sürümünü güncel özellik taahhüdü olarak değil, ürün tarihinin bir notu olarak korur.
 
 ## V1 beta neyi temsil ediyordu?
 
-V1 beta, OpenFlowKit'in basit bir akış şeması aracından daha geniş bir local-first diyagram çalışma alanına dönüştüğü dönüm noktasıydı.
+V1 beta, AISpaceFlow'in basit bir akış şeması aracından daha geniş bir local-first diyagram çalışma alanına dönüştüğü dönüm noktasıydı.
 
 Bu sürümle birlikte ürün yönü netleşti:
 

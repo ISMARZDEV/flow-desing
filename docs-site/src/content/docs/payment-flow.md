@@ -1,12 +1,12 @@
 ---
 draft: false
 title: Payment Flow Visualization
-description: Model subscription, checkout, retry, and exception-heavy payment systems in OpenFlowKit.
+description: Model subscription, checkout, retry, and exception-heavy payment systems in AISpaceFlow.
 ---
 
-Payment systems are one of the best use cases for OpenFlowKit because they mix clear business stages with asynchronous branches, retries, and exception handling.
+Payment systems are one of the best use cases for AISpaceFlow because they mix clear business stages with asynchronous branches, retries, and exception handling.
 
-They are also easy to get wrong if the diagram only shows the happy path. OpenFlowKit is a good fit because it lets you start rough, then keep adding operational detail.
+They are also easy to get wrong if the diagram only shows the happy path. AISpaceFlow is a good fit because it lets you start rough, then keep adding operational detail.
 
 ## What a useful payment diagram should include
 
@@ -62,7 +62,7 @@ customer notification, subscription active, and account downgrade.
 4. use layout to normalize spacing
 5. export a visual format for stakeholders and JSON for editable retention
 
-## Why this works well in OpenFlowKit
+## Why this works well in AISpaceFlow
 
 - branch labeling is easy on edges
 - auto layout cleans up decision-heavy graphs

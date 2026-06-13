@@ -1,12 +1,12 @@
 ---
 draft: false
 title: Theming
-description: Use design systems in OpenFlowKit to keep diagram styling consistent without manually restyling every canvas.
+description: Use design systems in AISpaceFlow to keep diagram styling consistent without manually restyling every canvas.
 ---
 
-OpenFlowKit handles theming through reusable design systems rather than ad hoc per-diagram styling.
+AISpaceFlow handles theming through reusable design systems rather than ad hoc per-diagram styling.
 
-## What theming means in OpenFlowKit
+## What theming means in AISpaceFlow
 
 Theming is not a separate rendering mode. It is the design-system layer that controls how diagrams feel across sessions and teams.
 

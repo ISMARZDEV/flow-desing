@@ -1,10 +1,10 @@
 ---
 draft: false
 title: AWS Architecture Diagram
-description: Şablonlar, ikon destekli varlıklar, AI taslağı, DSL ve dışa aktarma akışlarıyla OpenFlowKit içinde AWS mimari diyagramları oluşturun.
+description: Şablonlar, ikon destekli varlıklar, AI taslağı, DSL ve dışa aktarma akışlarıyla AISpaceFlow içinde AWS mimari diyagramları oluşturun.
 ---
 
-OpenFlowKit, sağlayıcı ikonları, mimari odaklı yerleşim ve AI/kod tabanlı üretim kombinasyonu sayesinde AWS mimari diyagramları için güçlü bir çalışma alanıdır.
+AISpaceFlow, sağlayıcı ikonları, mimari odaklı yerleşim ve AI/kod tabanlı üretim kombinasyonu sayesinde AWS mimari diyagramları için güçlü bir çalışma alanıdır.
 
 ## Başlangıç yolları
 

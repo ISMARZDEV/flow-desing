@@ -1,12 +1,12 @@
-# @ismarzdev/openflowkit-core
+# @ismarzdev/aispaceflow-core
 
-[![npm version](https://img.shields.io/npm/v/@ismarzdev/openflowkit-core?style=flat-square&color=indigo)](https://www.npmjs.com/package/@ismarzdev/openflowkit-core)
+[![npm version](https://img.shields.io/npm/v/@ismarzdev/aispaceflow-core?style=flat-square&color=indigo)](https://www.npmjs.com/package/@ismarzdev/aispaceflow-core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/ISMARZDEV/flow-desing/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue?style=flat-square)](https://www.typescriptlang.org/)
 
-> Core parsers, types, and brand utilities for **[OpenFlowKit](https://openflowkit.com)** — the open-source, white-label diagramming engine.
+> Core parsers, types, and brand utilities for **[AISpaceFlow](https://aispaceflow.com)** — the open-source, white-label diagramming engine.
 
-This package contains the framework-agnostic logic extracted from OpenFlowKit so you can use it independently in your own apps or build your own canvas on top.
+This package contains the framework-agnostic logic extracted from AISpaceFlow so you can use it independently in your own apps or build your own canvas on top.
 
 ---
 
@@ -24,7 +24,7 @@ This package contains the framework-agnostic logic extracted from OpenFlowKit so
 ## Install
 
 ```bash
-npm install @ismarzdev/openflowkit-core
+npm install @ismarzdev/aispaceflow-core
 ```
 
 > **Peer dependencies:** `react >=18`, `react-dom >=18`, `reactflow >=11`
@@ -38,7 +38,7 @@ npm install @ismarzdev/openflowkit-core
 Converts Mermaid.js syntax into React Flow nodes & edges, ready to pass directly to a `<ReactFlow>` component.
 
 ```ts
-import { parseMermaid } from '@ismarzdev/openflowkit-core';
+import { parseMermaid } from '@ismarzdev/aispaceflow-core';
 
 const dsl = `
 flowchart TD
@@ -66,7 +66,7 @@ const { nodes, edges, direction, error } = parseMermaid(dsl);
 ### OpenFlow DSL V2 Parser
 
 ```ts
-import { parseOpenFlowDSL } from '@ismarzdev/openflowkit-core';
+import { parseOpenFlowDSL } from '@ismarzdev/aispaceflow-core';
 
 const dsl = `
 #id:start shape:capsule color:emerald
@@ -86,7 +86,7 @@ const { nodes, edges } = parseOpenFlowDSL(dsl);
 ### Brand Palette Generation
 
 ```ts
-import { generatePalette } from '@ismarzdev/openflowkit-core';
+import { generatePalette } from '@ismarzdev/aispaceflow-core';
 
 const palette = generatePalette('#6366f1'); // your primary brand color
 // Returns: { primary, secondary, accent, surface, border, text, ... }
@@ -99,16 +99,16 @@ const palette = generatePalette('#6366f1'); // your primary brand color
 Full TypeScript support with declaration files included.
 
 ```ts
-import type { FlowNode, FlowEdge, NodeData, DesignSystem } from '@ismarzdev/openflowkit-core';
+import type { FlowNode, FlowEdge, NodeData, DesignSystem } from '@ismarzdev/aispaceflow-core';
 ```
 
 ---
 
-## Part of OpenFlowKit
+## Part of AISpaceFlow
 
-This package is the extracted core of **[OpenFlowKit](https://github.com/ISMARZDEV/flow-desing)** — a full-featured, MIT-licensed, white-label diagramming engine built on React Flow.
+This package is the extracted core of **[AISpaceFlow](https://github.com/ISMARZDEV/flow-desing)** — a full-featured, MIT-licensed, white-label diagramming engine built on React Flow.
 
-- 🌐 **Website**: [openflowkit.com](https://openflowkit.com)
+- 🌐 **Website**: [aispaceflow.com](https://aispaceflow.com)
 - 📦 **Full app**: Self-host or fork the repo
 - 🐛 **Issues**: [GitHub Issues](https://github.com/ISMARZDEV/flow-desing/issues)
 

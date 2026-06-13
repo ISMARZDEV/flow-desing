@@ -4,7 +4,7 @@ title: Infrastructure Sync (Living Diagrams)
 description: Terraform state, Kubernetes manifestleri ve Docker Compose dosyalarını AI sağlayıcısına ihtiyaç duymadan doğrudan diyagrama dönüştürün.
 ---
 
-Infrastructure Sync, gerçek altyapı dosyalarını deterministik şekilde OpenFlowKit diyagramlarına dönüştürür.
+Infrastructure Sync, gerçek altyapı dosyalarını deterministik şekilde AISpaceFlow diyagramlarına dönüştürür.
 
 ## Desteklenen formatlar
 
@@ -22,4 +22,4 @@ Infrastructure Sync, gerçek altyapı dosyalarını deterministik şekilde OpenF
 
 ## Sonrasında ne olur?
 
-Oluşturulan sonuç yine normal bir OpenFlowKit diyagramıdır. Uyguladıktan sonra düzen, açıklama, dışa aktarma ve karşılaştırma akışlarına devam edebilirsiniz.
+Oluşturulan sonuç yine normal bir AISpaceFlow diyagramıdır. Uyguladıktan sonra düzen, açıklama, dışa aktarma ve karşılaştırma akışlarına devam edebilirsiniz.
